@@ -18,32 +18,32 @@ public class SimpleSender {
 	    String topic="first-topic";
 	    for(int i=1;i<=10;i++) {
 	        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "first-key", 
-	                "This is test message "+i);
+	                "This is test message Github "+i);
 	        producer.send(record);
 	    }
 	    for(int i=11;i<=20;i++) {
 	        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "second-key", 
-	                "This is test message "+i);
+	                "This is test message Github "+i);
 	        producer.send(record);
 	    }
 	    for(int i=21;i<=30;i++) {
 	        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "third-key", 
-	                "This is test message "+i);
+	                "This is test message Github "+i);
 	        producer.send(record);
 	    }
 	    for(int i=31;i<=40;i++) {
 	        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "fourth-key", 
-	                "This is test message "+i);
+	                "This is test message Github "+i);
 	        producer.send(record);
 	    }
 	    for(int i=41;i<=50;i++) {
 	        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "fifth-key", 
-	                "This is test message "+i);
+	                "This is test message Github "+i);
 	        producer.send(record);
 	    }
 	    for(int i=51;i<=60;i++) {
 	        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "sixth-key", 
-	                "This is test message "+i);
+	                "This is test message Github "+i);
 	        producer.send(record);
 	    }
 	    System.out.println("messages sent");
