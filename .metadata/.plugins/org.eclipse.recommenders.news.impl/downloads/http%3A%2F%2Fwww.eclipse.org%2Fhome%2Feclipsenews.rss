@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://newsroom.eclipse.org/">
+  <channel>
+    <title>Eclipse Announcements [%1]</title>
+    <link>https://newsroom.eclipse.org/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Eclipse Foundation Establishes Category A Liaison With ISO/IEC JTC 1/SC 38 for Cloud Computing and Distributed Platforms</title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-foundation-establishes-category-liaison-isoiec-jtc-1sc-38-cloud</link>
+  <description>
+&lt;span&gt;Eclipse Foundation Establishes Category A Liaison With ISO/IEC JTC 1/SC 38 for Cloud Computing and Distributed Platforms&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Frédéric Desbiens&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 2023-10-03 09:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p dir="ltr"&gt;In preparation for the upcoming launch of the Eclipse Dataspaces Working Group, we are proud to announce the establishment of a Category A liaison between Eclipse Foundation AISBL and&lt;a href="https://www.iso.org/committee/601355.html" rel="nofollow"&gt; &lt;u&gt;ISO/IEC JTC 1/SC 38&lt;/u&gt;&lt;/a&gt; (Cloud Computing and Distributed Platforms).&lt;/p&gt;
+&lt;p dir="ltr"&gt;SC 38 pursues standardization in Cloud Computing and Distributed Platforms, including Foundational concepts and technologies, operational issues, and interactions among cloud computing systems and other distributed systems.&lt;/p&gt;
+&lt;p dir="ltr"&gt;A dataspace is a multi-organizational agreement and a supporting technical infrastructure enabling data sharing between two or more participants. Dataspaces are naturally distributed, hence SC 38's interest in them.&lt;/p&gt;
+&lt;p dir="ltr"&gt;The Eclipse Foundation is home to the &lt;a href="https://projects.eclipse.org/projects/technology.edc" rel="nofollow"&gt;&lt;u&gt;Eclipse Dataspace Components project&lt;/u&gt;&lt;/a&gt; (EDC). EDC is a comprehensive framework providing a basic set of features that dataspace implementations can use and customize while preserving interoperability through a well-defined API. EDC implements the Gaia-X AISBL Trust Framework and the IDSA Dataspace protocol.&lt;/p&gt;
+&lt;p dir="ltr"&gt;By establishing this liaison, the Eclipse Foundation intends to contribute its expertise to future standardization efforts revolving around cloud computing, dataspaces, and edge computing. Existing and upcoming Eclipse specifications could eventually be transposed into standards as well.&lt;/p&gt;
+&lt;p&gt;The Eclipse Foundation obtained the status of Publicly Available Specification (PAS) submitter back in November 2022. Since then, it has successfully submitted its&lt;a href="https://sparkplug.eclipse.org" rel="nofollow"&gt; &lt;u&gt;Sparkplug&lt;/u&gt;&lt;/a&gt; specification for transposition as an international standard. Sparkplug will officially be published as&lt;a href="https://www.iso.org/standard/86204.html" rel="nofollow"&gt; &lt;u&gt;ISO/IEC 20237&lt;/u&gt;&lt;/a&gt; in the upcoming months.&lt;/p&gt;&lt;/div&gt;
+      </description>
+  <pubDate>Tue, 03 Oct 2023 13:00:00 +0000</pubDate>
+    <dc:creator>Frédéric Desbiens</dc:creator>
+    <guid isPermaLink="false">39711 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title> The CRA should support open practices of open source and the development of European Open source to the advantage of small and medium size entreprises (SMEs)</title>
+  <link>https://newsroom.eclipse.org/news/announcements/cra-should-support-open-practices-open-source-and-development-european-open</link>
+  <description>
+&lt;span&gt; The CRA should support open practices of open source and the development of European Open source to the advantage of small and medium size entreprises (SMEs)&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Shanda Giacomoni&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Thu, 2023-09-21 01:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p dir="ltr"&gt;As the European Union is about to initiate negotiations between co-legislators on the Cyber Resilience Act (CRA), we, the undersigned organisations and contributors to leading European open source software (OSS), herewith express our utmost concerns about the consequences of the proposed CRA, and misconceptions throughout the EU legislative process.&lt;/p&gt;
+&lt;p class="text-align-justify" dir="ltr"&gt;In this time of increasing awareness of the challenges to European open strategic autonomy, Europe needs a strong open source community supportive of SMEs, startups and scaleups, but also accountability of large corporations in increasing cybersecurity.&lt;/p&gt;
+&lt;p class="text-align-justify" dir="ltr"&gt;We deeply share the CRA’s aim to improve cybersecurity in the EU and embrace the urgent need to protect citizens and economies by improving software security. &lt;/p&gt;
+&lt;p class="text-align-justify" dir="ltr"&gt;We welcome some recent positive changes brought by the co-legislators, such as the manufacturers’ obligation to report vulnerabilities to the entity maintaining OSS.&lt;/p&gt;
+&lt;p class="text-align-justify" dir="ltr"&gt;However, should the proposal or the position of the European Parliament be adopted as it stands, the CRA would: decrease the number of OSS projects available to European SMEs; increase the control over OSS initiatives by large corporations; jeopardise the fragile equilibrium that benefits SMEs which contributes to European innovation; and reduce the security of products available to consumers.&lt;/p&gt;
+&lt;p class="text-align-justify" dir="ltr"&gt;Thus, in order to not harm European innovation we urge co-legislators to consider the following:&lt;/p&gt;
+&lt;ul&gt;&lt;li dir="ltr"&gt;Clearly state that if open source software under the governance of a non-profit falls within the scope of the legislation, legal responsibility should only be on commercial entities supplying the software in the course of a commercial activity, and not the governing non-profit which makes the software available free of charge;&lt;/li&gt;
+&lt;li dir="ltr"&gt;Recognise for open source software that is under the governance of non-profits that are acting as neutral spaces, those non-profits may accept to collaborate with for-profit entities by coordinating the compliance of the software;&lt;/li&gt;
+&lt;li dir="ltr"&gt;Allow the CE marking and overall compliance managed by commercial entities, to be reusable by the OS community.&lt;/li&gt;
+&lt;/ul&gt;&lt;p class="text-align-justify" dir="ltr"&gt;With these elements the CRA could achieve one of its objectives to regulate and improve the cybersecurity practices of OSS used in commercial activities without altering the equilibrium of OSS development, research and collaboration, which currently plays to the advantage of European SMEs and innovation.&lt;/p&gt;
+&lt;p class="text-align-justify" dir="ltr"&gt;The undersigned organisations collectively represent a large part of the open source ecosystem in Europe. We offer our collective expertise, and support an increased dialogue towards the CRA’s successful implementation in this new regulatory paradigm.&lt;/p&gt;
+&lt;p class="text-align-center" dir="ltr"&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src="https://live.staticflickr.com/65535/53199196463_88cbb06960_c.jpg" alt="CRA undersigned organizations" /&gt;&lt;/p&gt;&lt;p&gt;Download the PDF in &lt;a href="https://drive.google.com/file/d/1F_0NeZC8n8RKJ-lXZ48cUag5Xl_GIWZG/view?usp=drive_link" rel="nofollow"&gt;English&lt;/a&gt;. &lt;/p&gt;&lt;/div&gt;
+      </description>
+  <pubDate>Thu, 21 Sep 2023 05:00:00 +0000</pubDate>
+    <dc:creator>Shanda Giacomoni</dc:creator>
+    <guid isPermaLink="false">39683 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>OpenHW Group Appoints Florian 'Flo' Wohlrab as New CEO to Spearhead Open-Source Ecosystem Advancement</title>
+  <link>https://newsroom.eclipse.org/news/announcements/openhw-group-appoints-florian-flo-wohlrab-new-ceo-spearhead-open-source</link>
+  <description>
+&lt;span&gt;OpenHW Group Appoints Florian 'Flo' Wohlrab as New CEO to Spearhead Open-Source Ecosystem Advancement&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Christopher Guindon&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Wed, 2023-09-20 15:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;OpenHW Group, dedicated to fostering collaboration among hardware and software designers on open-source cores, related IP, tools, and software projects, has chosen Wohlrab to lead the organization into a new era of open-source innovation.&lt;/p&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-news-url field--type-link field--label-above"&gt;
+    &lt;div class="field--label"&gt;URL&lt;/div&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://www.openhwgroup.org/news/2023/09/20/openhw-group-appoints-florian-flo-wohlrab-as-new-ceo-to-spearhead-open-source-ecosystem-advancement/"&gt;https://www.openhwgroup.org/news/2023/09/20/openhw-group-appoints-florian-flo-w…&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/openhw-group" hreflang="en"&gt;OpenHW Group&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Wed, 20 Sep 2023 19:00:00 +0000</pubDate>
+    <dc:creator>Christopher Guindon</dc:creator>
+    <guid isPermaLink="false">39689 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>The Eclipse Foundation Releases 2023 Jakarta EE Developer Survey Report</title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-foundation-releases-2023-jakarta-ee-developer-survey-report</link>
+  <description>
+&lt;span&gt;The Eclipse Foundation Releases 2023 Jakarta EE Developer Survey Report&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 2023-09-19 07:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;strong&gt;BRUSSELS – September 19, 2023 – &lt;/strong&gt;&lt;a href="http://www.eclipse.org" rel="nofollow"&gt;The Eclipse Foundation&lt;/a&gt;, one of the world’s largest open source software foundations, today announced the availability of the 2023 Jakarta EE Developer Survey Report, the industry’s most prominent survey for technical insights into enterprise Java. The results showcase a significantly increased growth in the use of Jakarta EE and a growing interest in cloud native Java overall. The 2023 Jakarta EE Developer Survey Report can be downloaded in its entirety &lt;a href="https://outreach.eclipse.foundation/jakarta-ee-developer-survey-2023" rel="nofollow"&gt;here&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;“2023 has seen the continued growth of cloud native Java, with open source leading the way,” said Mike Milinkovich, executive director of the Eclipse Foundation. “The release of Jakarta EE 10 truly opened the doors for this shift, and as we set our sights on Jakarta EE 11 our community is looking to drive innovation for enterprise developers by providing new and enhanced APIs and embracing new features in the Java language and platform.”&lt;/p&gt;
+&lt;p&gt;Now in its sixth year, the Jakarta EE Developer Survey plays a crucial role in providing insight into the needs, preferences, and perspectives of developers within the Java ecosystem. Additionally, it also serves as a valuable resource to help the Java ecosystem better understand the evolving landscape of cloud-native enterprise Java and what that means for their respective strategies and businesses. Spanning from March 14 to May 23, 2025, this year’s survey engaged a total of 2,203 participants.&lt;/p&gt;
+&lt;p&gt;Here are some of the key findings from this year’s survey:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Spring/Spring Boot, which incorporates elements of Jakarta EE, continues to dominate as the leading Java framework for cloud native applications at 66%. (up from 57% in 2022). Jakarta EE usage remains steady at 53%, while MicroProfile usage experienced a slight decline, dropping from 30% in 2022 to 26% in 2023. It’s important to note that Spring/SpringBoot is reliant on Jakarta EE developments for its operation and is not necessarily competitive with Jakarta EE. Both are critical ingredients to the healthy enterprise Java ecosystem.&lt;/li&gt;
+&lt;li&gt;28% of the respondents will develop cloud native applications to replace some or all existing services (up from 25% in 2022) while 24% will modify existing Java applications for migration in the cloud (vs 28% in 2022). 22% of the respondents are currently running their Java applications in the cloud (vs 18% in 2022)&lt;/li&gt;
+&lt;li&gt;Despite only shipping in September 2022, Jakarta EE 10 usage has grown to 17%.&lt;/li&gt;
+&lt;li&gt;Over 60% of respondents (59% in 2022) have already migrated to Jakarta EE, or plan to do so within the next 6-24 months.&lt;/li&gt;
+&lt;li&gt;17% of respondents run Jakarta EE 9/9.1 in production (up from 14% in 2022) and 28% currently run Jakarta EE 8 in production (vs 24% in 2022)&lt;/li&gt;
+&lt;li&gt;The Jakarta EE Community is deeply interested in adopting the innovations implemented in Java SE into Jakarta EE (30%). This is a good indicator that Jakarta EE 11 release plan is on the right direction by adopting new Java SE 21 features.&lt;/li&gt;
+&lt;li&gt;The Top five community priorities for Jakarta EE are:
+&lt;ul&gt;&lt;li&gt;Better support for Kubernetes 50% (51% in 2022)&lt;/li&gt;
+&lt;li&gt;Better support for microservices (48%)&lt;/li&gt;
+&lt;li&gt;Adapt Java SE innovations (such as Records and Virtual Threads) (30%)&lt;/li&gt;
+&lt;li&gt;Improve support for serverless (25%)&lt;/li&gt;
+&lt;li&gt;Faster support from existing Java EE / Jakarta EE or cloud vendors, improve support for testing &amp; faster pace of innovation (23%) &lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;With regard to the community’s priorities in terms of the future of Jakarta EE, it is interesting to find that the first two priorities remain consistent over the past two years, from 2021 to 2023. However, last year’s 3rd place priority “Faster Support from existing Java EE / Jakarta EE or cloud vendors,” has been overtaken by a shift to adapting Java SE innovations and serverless support. &lt;/p&gt;
+&lt;p&gt;The Jakarta EE community welcomes contributions and participation from all interested individuals and organizations. As the Jakarta EE Working Group diligently works towards the Jakarta EE 11 release, which includes innovative cloud native features, there’s no better time to become part of this vibrant community and make your voice heard. To get involved and connect with the global community, visit us &lt;a href="https://jakarta.ee/connect/" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For organizations that value enterprise Java and would like to help shape its future, the Jakarta EE Working Group offers a unique opportunity. Membership in the working group not only supports the sustainability of the community, but also provides avenues for participating in marketing initiatives and direct engagement with the community. Discover the numerous benefits and advantages of membership &lt;a href="https://jakarta.ee/membership/" rel="nofollow"&gt;here&lt;/a&gt;. Your involvement can help drive the future of enterprise Java.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quotes from Jakarta EE Working Group Member Organizations &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IBM&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“It is great to see the progress made with developers around Jakarta EE adoption,” said Ian Robinson, CTO, IBM Application Runtimes. “We continue to innovate and deliver complete Jakarta EE compatibility and production support, along with MicroProfile and Spring Boot, with our Liberty runtime making it the ideal runtime for cloud-native applications.”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Oracle&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“The 50%+ growth in survey responses indicates a vibrant Jakarta EE community that is looking for improved Kubernetes support, microservices support, and adoption of new Java SE features such as virtual threads. Oracle’s investments in WebLogic Server, Helidon, Coherence, and Verrazzano are aligned with these trends, and the survey results provide valuable insights into these and other trends in the enterprise Java community.” - Tom Snyder, VP of Engineering, Oracle Enterprise Cloud Native Java&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Payara&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“It is fantastic to see such an increase in participation in this year's comprehensive Jakarta EE Developer Survey. Especially encouraging is the growth in use of Jakarta EE 10, despite it only shipping in December,” said Steve Millidge, CEO and Founder, Payara. “We help developers enjoy its new features, with our Payara Platform 6 Enterprise and Community Edition. Respondents continue to ask for greater support for Kubernetes and Docker in Jakarta EE. We hope to provide an alternate solution for this, with our fully managed cloud native runtime, Payara Cloud, taking away the hassle of Kubernetes for Jakarta EE developers altogether. Overall, the future looks bright for Jakarta EE and Payara, as we note with pride that the percentage of respondents using Payara has also increased!”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About the Eclipse Foundation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source software collaboration and innovation. The Foundation is home to the Eclipse IDE, Jakarta EE, and over 400 open source projects, including runtimes, tools, and frameworks for cloud and edge applications, IoT, AI, automotive, systems engineering, distributed ledger technologies, open processor designs, and many others. The Eclipse Foundation is an international non-profit association supported by over 330 members, including industry leaders who value open source as a key enabler for their business strategies. To learn more, follow us on social media &lt;a href="https://twitter.com/EclipseFdn" rel="nofollow"&gt;@EclipseFdn&lt;/a&gt;,&lt;a href="https://linkedin.com/company/eclipse-foundation" rel="nofollow"&gt; LinkedIn&lt;/a&gt;, or visit&lt;a href="http://eclipse.org" rel="nofollow"&gt; eclipse.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Third-party trademarks mentioned are the property of their respective owners.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p class="text-align-center"&gt;###&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Media contacts:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Schwartz Public Relations for the Eclipse Foundation, AISBL (Germany)&lt;/p&gt;
+&lt;p&gt;Gloria Huppert, Franziska Wenzl&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:EclipseFoundation@schwartzpr.de" rel="nofollow"&gt;EclipseFoundation@schwartzpr.de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;+49 (89) 211 871 - 70 / - 58&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Nichols Communications for the Eclipse Foundation, AISBL&lt;/p&gt;
+&lt;p&gt;Jay Nichols&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:jay@nicholscomm.com" rel="nofollow"&gt;jay@nicholscomm.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;+1 408-772-1551&lt;/p&gt;
+&lt;p&gt;514 Media Ltd for the Eclipse Foundation, AISBL (France, Italy, Spain)&lt;/p&gt;
+&lt;p&gt;Benoit Simoneau&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:benoit@514-media.com" rel="nofollow"&gt;benoit@514-media.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;M: +44 (0) 7891 920 370&lt;/p&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/jakarta-ee" hreflang="en"&gt;Jakarta EE&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/java-ee" hreflang="en"&gt;java ee&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Tue, 19 Sep 2023 11:00:00 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39684 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>Eclipse Foundation Publishes Results of Eclipse JKube Security Audit</title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-foundation-publishes-results-eclipse-jkube-security-audit</link>
+  <description>
+&lt;span&gt;Eclipse Foundation Publishes Results of Eclipse JKube Security Audit&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 2023-09-15 13:16&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;This audit included a documentation review, static code review and manual review, which uncovered two findings that have been addressed by the JKube team through container configuration improvements.&lt;/p&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-news-url field--type-link field--label-above"&gt;
+    &lt;div class="field--label"&gt;URL&lt;/div&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://blogs.eclipse.org/post/mika%C3%ABl-barbero/eclipse-foundation-publishes-results-eclipse-jkube-security-audit"&gt;https://blogs.eclipse.org/post/mika%C3%ABl-barbero/eclipse-foundation-publishes…&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+</description>
+  <pubDate>Fri, 15 Sep 2023 17:16:30 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39682 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>Eclipse IDE 2023-09 Is Now Available</title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-ide-2023-09-now-available</link>
+  <description>
+&lt;span&gt;Eclipse IDE 2023-09 Is Now Available&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Wed, 2023-09-13 12:07&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Featuring improved plug-in &amp; development tooling and several other new features, the latest edition of the Eclipse IDE delivers what you need to rapidly innovate.  &lt;/p&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-news-url field--type-link field--label-above"&gt;
+    &lt;div class="field--label"&gt;URL&lt;/div&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://eclipseide.org/"&gt;https://eclipseide.org/&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+</description>
+  <pubDate>Wed, 13 Sep 2023 16:07:13 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39680 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>The Eclipse Foundation Releases Results of the 2023 Cloud Developer Survey</title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-foundation-releases-results-2023-cloud-developer-survey</link>
+  <description>
+&lt;span&gt;The Eclipse Foundation Releases Results of the 2023 Cloud Developer Survey&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 2023-08-29 07:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;strong&gt;BRUSSELS – August 29, 2023 – &lt;/strong&gt;&lt;a href="https://www.eclipse.org/org/foundation/" rel="nofollow"&gt;The Eclipse Foundation&lt;/a&gt;, one of the world’s largest open source foundations, along with the &lt;a href="https://ecdtools.eclipse.org/" rel="nofollow"&gt;Eclipse Cloud DevTools Working Group&lt;/a&gt;, today announced the availability of the 2023 Cloud Developer Survey Report. This year’s Cloud Developer Survey results are based on an online survey of 534 cloud developers and software professionals conducted from November 21, 2022 to January 13, 2023. The survey’s objective is to gain a better understanding of the cloud-based software development ecosystem by identifying the requirements, priorities, and challenges faced by organizations leveraging a cloud-based development model, including those based on open source technologies. &lt;/p&gt;
+&lt;p&gt;“Cloud-based software developer tools are experiencing significant momentum as developer teams around the world continue to shift work to cloud native architectures. Our research has shown the majority of these developers not only leverage open source technologies but are increasingly looking to solutions governed by an open source software foundation,” said Mike Milinkovich, executive director of the Eclipse Foundation. “This demonstrates that there is solid traction for open source cloud development tools. Moreover, in an increasingly crowded market, Eclipse Foundation projects like Eclipse Open VSX, Eclipse Theia, and Eclipse Che are making an enormous impact by providing the community-led open source technologies that developers need.”&lt;/p&gt;
+&lt;p&gt;Survey participants represent a broad set of industries, organizations, and job functions. Some of the top conclusions drawn from the survey data include:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Open source is attractive to developers, with 74% saying they would like to see their companies invest more into OSS. &lt;/strong&gt;Developers prefer open source because it allows them to 1) focus on developing features that matter to their organizations; 2) plug into their existing environments; and 3) customize their tools.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloud native applications are becoming increasingly mission-critical. &lt;/strong&gt;Migration to the cloud continues, with 35% reporting their company’s most important applications are now cloud native. Only 13% of participants say their company has no cloud migration plans for important on-premise applications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developers are increasingly leaning towards open source technologies that are governed by an open source foundation. &lt;/strong&gt;While developers are not necessarily driving the business decisions, 36% say they would prefer working with projects that are foundation-supported. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overall, developers like the tools they use and spend significant time customizing them, but would consider switching to other cloud-based options under the right conditions.&lt;/strong&gt; Motivators include: a performance boost, tight integration with cloud technologies, ease of setup/configuration, and a high level of security.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;There is a disconnect between open source software consumption and participation. &lt;/strong&gt;56% of respondents use open source software, with only 38% being members of open source foundations and 31% contributing to open source projects. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developers see opportunities for growth around AI/ML and edge.&lt;/strong&gt; Developers are generally excited about experimenting with new technologies. Their use of AI/ML is increasing, with much of it happening at the edge.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;In addition to these findings, the survey report provides detailed key takeaways and recommendations for cloud developers, employers, and other ecosystem participants. The 2023 Cloud Developer Survey Report is now available to all interested parties and can be &lt;a href="https://outreach.eclipse.foundation/cloud-developer-survey-2023" rel="nofollow"&gt;downloaded for free here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To learn more about getting involved with the Eclipse Cloud DevTools Working Group, please visit us at &lt;a href="https://ecdtools.eclipse.org/" rel="nofollow"&gt;ecdtools.eclipse.org&lt;/a&gt;, or email us at &lt;a href="mailto:membership@eclipse.org" rel="nofollow"&gt;membership@eclipse.org&lt;/a&gt;. Developers and other interested parties can also join the Cloud DevTools Working Group mailing list to stay informed about working group projects and progress. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About the Eclipse Foundation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source software collaboration and innovation. The Foundation is home to the Eclipse IDE, Jakarta EE, and over 425 open source projects, including runtimes, tools, and frameworks for cloud and edge applications, IoT, AI, automotive, systems engineering, distributed ledger technologies, open processor designs, and many others. The Eclipse Foundation is an international non-profit association supported by over 330 members, including industry leaders who value open source as a key enabler for their business strategies. To learn more, follow us on social media &lt;a href="https://twitter.com/EclipseFdn" rel="nofollow"&gt;@EclipseFdn&lt;/a&gt;,&lt;a href="https://linkedin.com/company/eclipse-foundation" rel="nofollow"&gt; LinkedIn&lt;/a&gt;, or visit&lt;a href="http://eclipse.org" rel="nofollow"&gt; eclipse.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Third-party trademarks mentioned are the property of their respective owners.&lt;/p&gt;
+&lt;p class="text-align-center"&gt;###&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Media contacts:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Schwartz Public Relations for the Eclipse Foundation, AISBL (Germany)&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;Stephanie Brüls / Susanne Pawlik&lt;/p&gt;
+&lt;p&gt;Sendlinger Straße 42A&lt;/p&gt;
+&lt;p&gt;80331 Munich&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:EclipseFoundation@schwartzpr.de" rel="nofollow"&gt;EclipseFoundation@schwartzpr.de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;+49 (89) 211 871 – 64 / -35&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Nichols Communications for the Eclipse Foundation, AISBL&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;Jay Nichols&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:jay@nicholscomm.com" rel="nofollow"&gt;jay@nicholscomm.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;+1 408-772-1551&lt;/p&gt;
+&lt;p&gt;514 Media Ltd for the Eclipse Foundation, AISBL (France, Italy, Spain)&lt;/p&gt;
+&lt;p&gt;Benoit Simoneau&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:benoit@514-media.com" rel="nofollow"&gt;benoit@514-media.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;M: +44 (0) 7891 920 370&lt;/p&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/cloud-dev-tools" hreflang="en"&gt;cloud dev tools&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/cloud-development" hreflang="en"&gt;cloud development&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/developer-tools" hreflang="en"&gt;developer tools&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Tue, 29 Aug 2023 11:00:00 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39656 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>Eclipse Foundation Publishes Results of Equinox p2 Security Audit</title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-foundation-publishes-results-equinox-p2-security-audit</link>
+  <description>
+&lt;span&gt;Eclipse Foundation Publishes Results of Equinox p2 Security Audit&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Wed, 2023-07-12 10:03&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-news-url field--type-link field--label-above"&gt;
+    &lt;div class="field--label"&gt;URL&lt;/div&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://blogs.eclipse.org/post/mika%C3%ABl-barbero/eclipse-foundation-publishes-results-equinox-p2-security-audit"&gt;https://blogs.eclipse.org/post/mika%C3%ABl-barbero/eclipse-foundation-publishes…&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+</description>
+  <pubDate>Wed, 12 Jul 2023 14:03:25 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39593 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>The Open VSX Registry, a Vendor-Neutral Open Source Alternative to the Visual Studio Marketplace, Gets its Own Working Group at the Eclipse Foundation</title>
+  <link>https://newsroom.eclipse.org/news/announcements/open-vsx-registry-vendor-neutral-open-source-alternative-visual-studio-0</link>
+  <description>
+&lt;span&gt;The Open VSX Registry, a Vendor-Neutral Open Source Alternative to the Visual Studio Marketplace, Gets its Own Working Group at the Eclipse Foundation&lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 2023-06-27 06:30&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;strong&gt;BRUSSELS, Belgium – June 27, 2023 – &lt;/strong&gt;The Eclipse Foundation, one of the world’s largest open source software foundations, today announced the formation of the Open VSX Working Group. The mission of the new working group will be to manage and accelerate adoption of the Open VSX Registry, a vendor-neutral, community-supported alternative to the Microsoft Visual Studio Marketplace. &lt;/p&gt;
+
+&lt;p&gt;Built on the&lt;a href="https://projects.eclipse.org/projects/ecd.openvsx"&gt; Eclipse Open VSX&lt;/a&gt; open source project, the Open VSX Registry currently hosts nearly 3,000 extensions from over 1,500 different publishers, with new publishers and extensions being added daily. Since the Open VSX Registry became available in 2021, developers have consumed more than 40M extensions, with downloads now exceeding 2M per month. To manage and facilitate this ongoing growth, management of the Open VSX Registry will now shift from the &lt;a href="https://ecdtools.eclipse.org/"&gt;Eclipse Cloud DevTools Working Group&lt;/a&gt; to a new working group, with initial members including Google, Huawei, Posit, Salesforce, Siemens, and STMicroelectronics. &lt;/p&gt;
+
+&lt;p&gt;“The Open VSX Registry has experienced significant momentum at the Eclipse Foundation, so much so that it merits having its own working group for continued evolution and growth,” said Mike Milinkovich, executive director of the Eclipse Foundation. “By creating a vendor-neutral home with a true open source model for these extensions, we can ensure that this marketplace is guided by the community, and not just a single vendor.”&lt;/p&gt;
+
+&lt;p&gt;The Open VSX Registry delivers on the industry’s need for a fully open source approach to marketplace technologies for Visual Studio (VS) Code extensions. It increases transparency and flexibility for extension users, publishers, and tool developers, particularly those leveraging cloud-based development tools and IDEs that want to avoid being locked into proprietary models and marketplaces. &lt;/p&gt;
+
+&lt;p&gt;As an open alternative to the Visual Studio Marketplace, the Open VSX Registry offers free access to extensions that can be used with any technology or tool that supports them. These include many open source solutions like Eclipse Che and Eclipse Theia, as well as Salesforce Code Builder, Google Cloud Workstations, Gitpod, SAP Business Application Studio and other applications based on Eclipse projects.&lt;/p&gt;
+
+&lt;p&gt;In addition, since the Eclipse Open VSX code itself is open source, any organization can contribute to the registry code and reuse it to create an internally hosted and managed extension registry for their in-house developers to publish and consume VS Code extensions.&lt;/p&gt;
+
+&lt;p&gt;Interested parties can learn more or start using the Open VSX Registry immediately at &lt;a href="https://open-vsx.org/"&gt;open-vsx.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To learn more about how to get involved with the Open VSX Working Group, visit the &lt;a href="https://www.eclipse.org/membership/"&gt;Eclipse Foundation membership page&lt;/a&gt; or send email to &lt;a href="mailto:membership.coordination@eclipse-foundation.org"&gt;membership.coordination@eclipse-foundation.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quotes from Open VSX Working Group Members &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Google&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“We are excited to expand our relationship with the Eclipse Foundation and support the creation of the Open VSX Working Group,” said Thomas DeMeo, Director of Developer Tools, Google Cloud. “At Google Cloud, we want to give our customers options when it comes to working with their preferred IDE, and the Open VSX Registry furthers our ability to deliver on that goal. As both strong supporters and originators of many open source efforts, we support the customer choice and vendor neutrality that the Open VSX Registry aims to deliver.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huawei&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“The mission of the CodeArts team at Huawei Cloud is to build the top-notch tools and services for the Huawei developer ecosystem,” said Yawei Wang, Chief Technologist of Developer Tools at Huawei Cloud. “We are committed to helping developers write and ship code faster and easier and keeping teams productive. Meanwhile, we also offer an open platform on which developers can build and publish their own extensions to suit specific business needs. The Open VSX Registry, a vendor-neutral option for IDE extensions, is essential to fulfill our mission and keep our long-standing commitment to developers.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Posit&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;“The mission of Posit is to create open source software for data science, scientific research, and technical communication,” said Tareef Kawaf, President of Posit Software, PBC. “We invest heavily in open source development, education, and the community with the goal of continuing to serve knowledge creators as a 100 year company. We are happy to support the Open VSX Registry’s mission of maintaining a vendor-neutral platform for open source licensed community and professional IDE extensions.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Salesforce&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“Salesforce is excited to join the Open VSX Working Group to support the continued growth of an open ecosystem for Visual Studio Code extensions,” said Dan Fernandez, Vice President, Developer Services at Salesforce. “We also support the Open VSX Registry with built-in access from Salesforce Code Builder, a modern, web-based development environment tailored for Salesforce development. Our official Salesforce extensions are published to open-vsx.org to allow developers to work how they want, where they want.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Siemens&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“We at Siemens are dedicated to consistently improving our automation software offerings to meet the evolving needs of automation software engineers seeking innovation and efficiency,” said Johannes Birkenstock and Jacob Hilsebein, Software Developers at Siemens. “We deeply appreciate the collaborative efforts of our partners and communities, recognising their pivotal role in fostering open and flexible toolchains. Being a part of the Eclipse Foundation's Open VSX Working Group allows us to empower automation software engineers by providing them with the tools they love to use.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;STMicroelectronics&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“As the world’s leading supplier of general-purpose microcontrollers, ST continues to focus its embedded tools and software efforts on features and capabilities that help developers innovate more and achieve faster,” said Ricardo De-Sa-Earp, Executive Vice President, General-Purpose Microcontrollers, STMicroelectronics. “We recognize that partners and community contributions are key to building and enhancing the most comprehensive ecosystem around our products and see the Eclipse Open VSX project as a promising initiative to enlarge the possibilities offered to embedded developers even more.“&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About the Eclipse Foundation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The Eclipse Foundation provides our global community of individuals and organisations with a mature, scalable, and business-friendly environment for open source software collaboration and innovation. The Foundation is home to the Eclipse IDE, Jakarta EE, and over 400 open source projects, including runtimes, tools, and frameworks for cloud and edge applications, IoT, AI, automotive, systems engineering, distributed ledger technologies, open processor designs, and many others. The Eclipse Foundation is an international non-profit association supported by over 330 members, including industry leaders who value open source as a key enabler for their business strategies. To learn more, follow us on Twitter&lt;a href="https://twitter.com/EclipseFdn"&gt; @EclipseFdn&lt;/a&gt;,&lt;a href="https://linkedin.com/company/eclipse-foundation"&gt; LinkedIn&lt;/a&gt; or visit&lt;a href="http://eclipse.org"&gt; eclipse.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Third-party trademarks mentioned are the property of their respective owners.&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Media contacts:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;Schwartz Public Relations for the Eclipse Foundation, AISBL&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Gloria Huppert / Franziska Wenzl&lt;/p&gt;
+
+&lt;p&gt;Sendlinger Straße 42A&lt;/p&gt;
+
+&lt;p&gt;80331 Munich&lt;/p&gt;
+
+&lt;p&gt;EclipseFoundation@schwartzpr.de&lt;/p&gt;
+
+&lt;p&gt;+49 (89) 211 871 – 70 / -58&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;Nichols Communications for the Eclipse Foundation, AISBL&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Jay Nichols&lt;/p&gt;
+
+&lt;p&gt;jay@nicholscomm.com&lt;/p&gt;
+
+&lt;p&gt;+1 408-772-1551&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;514 Media Ltd for the Eclipse Foundation, AISBL (France, Italy, Spain)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Benoit Simoneau&lt;/p&gt;
+
+&lt;p&gt;benoit@514-media.com&lt;/p&gt;
+
+&lt;p&gt;M: +44 (0) 7891 920 370&lt;/p&gt;
+&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-news-image field--type-image field--label-above"&gt;
+    &lt;div class="field--label"&gt;Image&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;  &lt;img loading="lazy" src="https://newsroom.eclipse.org/sites/default/files/news/PR%20-%20Open%20VSX%20Social%20Card.png" width="1280" height="640" alt="" class="img-responsive" /&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/open-vsx" hreflang="en"&gt;Open VSX&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/eclipse-cloud-devtools" hreflang="en"&gt;eclipse cloud devtools&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="https://newsroom.eclipse.org/tags/cloud-development" hreflang="en"&gt;cloud development&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Tue, 27 Jun 2023 10:30:00 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39528 at https://newsroom.eclipse.org</guid>
+    </item>
+<item>
+  <title>Eclipse Sparkplug Specification Honored with IoT Business Impact Award </title>
+  <link>https://newsroom.eclipse.org/news/announcements/eclipse-sparkplug-specification-honored-iot-business-impact-award</link>
+  <description>
+&lt;span&gt;Eclipse Sparkplug Specification Honored with IoT Business Impact Award &lt;/span&gt;
+
+&lt;span&gt;&lt;span&gt;Jacob Harris&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 2023-05-23 09:22&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;strong&gt;BRUSSELS, Belgium – May 23, 2023 – &lt;/strong&gt;The Eclipse Foundation, one of the world’s largest open source software foundations, announced today that the &lt;a href="https://sparkplug.eclipse.org/"&gt;Eclipse Sparkplug specification&lt;/a&gt; has received a 2023 IoT Business Impact Award from &lt;a href="https://www.iotevolutionworld.com/Default.aspx"&gt;IoT Evolution&lt;/a&gt; magazine, the leading publication covering IoT technologies.&lt;/p&gt;
+
+&lt;p&gt;The award honors organizations for their IoT deployment case studies. Eclipse Sparkplug was recognized for their successful partnership bringing IoT functionality to NGL Energy Partners.&lt;/p&gt;
+
+&lt;p&gt;“Sparkplug is well on its way to becoming the de facto standard for making the IIoT ‘plug’n’play,’” said Frederic Desbiens, Eclipse Foundation program manager and evangelist for IoT and Edge Computing. “This award highlights the significant business benefits of implementing this specification in conjunction with MQTT.” &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About Sparkplug &amp; MQTT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sparkplug provides an open and freely available specification for how Edge of Network (EoN) gateways or native MQTT-enabled end devices and MQTT Applications communicate bi-directionally within an MQTT Infrastructure. It is recognized that MQTT is used across a wide spectrum of application solution use cases and an almost indefinable variation of network topologies. &lt;/p&gt;
+
+&lt;p&gt;By design, the MQTT specification does not dictate a Topic Namespace or any payload encoding. However, as the IIoT and other architectures leveraging the publisher/subscriber model are adopted by device OEMs in the industrial sector, having different Topic Namespace and payload encoding can inhibit interoperability for the end customer. To that end, the Sparkplug specification addresses the following components within an MQTT infrastructure: &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;Sparkplug defines an OT-centric Topic Namespace &lt;/li&gt;
+	&lt;li&gt;Sparkplug defines an OT-centric Payload definition optimized for industrial process variables &lt;/li&gt;
+	&lt;li&gt;Sparkplug defines MQTT Session State management required by real-time OT SCADA systems&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt; “It is my pleasure to recognize Sparkplug, an innovative solution that earned the Eclipse Foundation the 2023 Business Impact Award,” said Rich Tehrani, CEO, TMC. “I look forward to seeing more successful deployments of best-in-class solutions from the Eclipse Foundation in the future.”&lt;/p&gt;
+
+&lt;p&gt;The Sparkplug standard has recently been submitted for acceptance as an&lt;a href="https://www.globenewswire.com/en/news-release/2022/12/08/2570068/0/en/The-Eclipse-Foundation-Announces-The-Release-of-Sparkplug-3-0-and-Unveils-it-is-Being-Fast-Tracked-to-Become-an-International-Standard.html"&gt; ISO/IEC JTC 1 international standard&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About the Eclipse Foundation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The Eclipse Foundation provides our global community of individuals and organisations with a mature, scalable, and business-friendly environment for open source software collaboration and innovation. The Foundation is home to the Eclipse IDE, Jakarta EE, and over 400 open source projects, including runtimes, tools, and frameworks for cloud and edge applications, IoT, AI, automotive, systems engineering, distributed ledger technologies, open processor designs, and many others. The Eclipse Foundation is an international non-profit association supported by over 330 members, including industry leaders who value open source as a key enabler for their business strategies. To learn more, follow us on Twitter&lt;a href="https://twitter.com/EclipseFdn"&gt; @EclipseFdn&lt;/a&gt;,&lt;a href="https://linkedin.com/company/eclipse-foundation"&gt; LinkedIn&lt;/a&gt; or visit&lt;a href="http://eclipse.org"&gt; eclipse.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Third-party trademarks mentioned are the property of their respective owners.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About Crossfire Media&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crossfire Media, co-publishers of IoT Evolution, is an integrated marketing company with a core focus on future trends in technology. We service communities of interest with conferences, tradeshows, webinars and newsletters. Crossfire Media has a partnership with Technology Marketing Corporation (TMC) to produce events and websites related to disruptive technologies. Crossfire Media is a division of Crossfire Consulting, a full service Information Technology company based in New York. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About TMC&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Through education, industry news, live events and social influence, global buyers rely on TMC’s content-driven marketplaces to make purchase decisions and navigate markets. As a result, leading technology vendors turn to TMC for unparalleled branding, thought leadership and lead generation opportunities. Our in-person and online events deliver unmatched visibility and sales prospects for all percipients. Through our custom lead generation programs, we provide clients with an ongoing stream of leads that turn into sales opportunities and build databases. Additionally, we bolster brand reputations with the millions of impressions from display advertising on our news sites and newsletters. Making TMC a 360 degree marketing solution, we offer comprehensive event and road show management services and custom content creation with expertly ghost-crafted blogs, press releases, articles and marketing collateral to help with SEO, branding, and overall marketing efforts. For more information about TMC and to learn how we can help you reach your marketing goals, please visit www.tmcnet.com and follow us on Facebook, LinkedIn and Twitter, @tmcnet.&lt;/p&gt;
+
+&lt;p&gt;For more information about TMC and to learn how we can help you reach your marketing goals, please visit www.tmcnet.com.&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Media contacts:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Schwartz Public Relations for the Eclipse Foundation, AISBL&lt;/p&gt;
+
+&lt;p&gt;Stephanie Brüls / Susanne Pawlik&lt;/p&gt;
+
+&lt;p&gt;Sendlinger Straße 42A&lt;/p&gt;
+
+&lt;p&gt;80331 Munich&lt;/p&gt;
+
+&lt;p&gt;EclipseFoundation@schwartzpr.de&lt;/p&gt;
+
+&lt;p&gt;+49 (89) 211 871 – 64 / -35&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Nichols Communications for the Eclipse Foundation, AISBL&lt;/p&gt;
+
+&lt;p&gt;Jay Nichols&lt;/p&gt;
+
+&lt;p&gt;jay@nicholscomm.com&lt;/p&gt;
+
+&lt;p&gt;+1 408-772-1551&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;514 Media Ltd for the Eclipse Foundation, AISBL (France, Italy, Spain)&lt;/p&gt;
+
+&lt;p&gt;Benoit Simoneau&lt;/p&gt;
+
+&lt;p&gt;benoit@514-media.com&lt;/p&gt;
+
+&lt;p&gt;M: +44 (0) 7891 920 370&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TMC Contact:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Michelle Connolly&lt;/p&gt;
+
+&lt;p&gt;Senior Marketing Manager&lt;/p&gt;
+
+&lt;p&gt;203-852-6800, ext. 170&lt;/p&gt;
+
+&lt;p&gt;mconnolly@tmcnet.com &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+ &lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Tue, 23 May 2023 13:22:23 +0000</pubDate>
+    <dc:creator>Jacob Harris</dc:creator>
+    <guid isPermaLink="false">39503 at https://newsroom.eclipse.org</guid>
+    </item>
+
+  </channel>
+</rss>

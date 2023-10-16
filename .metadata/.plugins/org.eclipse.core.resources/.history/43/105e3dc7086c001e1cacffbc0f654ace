@@ -1,0 +1,5 @@
+package kafkaSenderProj;
+
+public class SimpleSender {
+
+}
