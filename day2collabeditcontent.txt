@@ -1,0 +1,735 @@
+Anil------------9703388097
+
+https://drive.google.com/drive/folders/1SBD6bF1QNbxx9b2t1B6_tjVZ67z7YMSw?usp=drive_link
+
+package com.boa.training.domain;
+
+public class Employee {
+    private int id;
+    private String name;
+    private String designation;
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getDesignation() {
+        return designation;
+    }
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+    public Employee(int id, String name, String designation) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.designation = designation;
+    }
+    public Employee() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+    
+    
+
+}
+
+
+
+package name: com.boa.training.serializer
+
+
+
+ <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.11.4</version>
+</dependency>
+
+
+package com.boa.training.serialzer;
+
+import org.apache.kafka.common.serialization.Serializer;
+
+import com.boa.training.domain.Employee;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class EmployeeSerializer implements Serializer<Employee> {
+    private ObjectMapper mapper=new ObjectMapper();
+    @Override
+    public byte[] serialize(String topic, Employee e) {
+        // TODO Auto-generated method stub
+        byte[] array=null;
+        try {
+            array=mapper.writeValueAsBytes(e);
+            System.out.println("serialized to "+new String(array));
+        } catch (JsonProcessingException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        return array;
+    }
+
+}
+
+
+kafka-topics --create --topic emp-topic --partitions 5 --replication-factor 1 --zookeeper localhost:2181
+
+
+package com.boa.training.sender;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.Callback;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+import com.boa.training.domain.Employee;
+import com.boa.training.serialzer.EmployeeSerializer;
+
+public class EmployeeSender {
+public static void main(String[] args) {
+    Properties props=new Properties();
+    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, EmployeeSerializer.class.getName());
+    
+    KafkaProducer<String, Employee> producer=new KafkaProducer<>(props);
+    String topic="emp-topic";
+    
+    Employee emp1=new Employee(10001, "Arvind", "Developer");
+    Employee emp2=new Employee(10002, "Surya", "Accountant");
+    
+    ProducerRecord<String, Employee> record1=new ProducerRecord<>(topic, "key-1", emp1);
+    ProducerRecord<String, Employee> record2=new ProducerRecord<>(topic, "key-2", emp2);
+    
+    producer.send(record1,new Callback() {
+        
+        @Override
+        public void onCompletion(RecordMetadata rmd, Exception e) {
+            // TODO Auto-generated method stub
+            if(e==null) {
+                System.out.println("message successfully published to partition "+rmd.partition());
+            }
+            else {
+                System.out.println("error in publishing");
+                e.printStackTrace();
+            }
+        }
+    });
+    producer.send(record2);
+    System.out.println("messages sent");
+    producer.close();
+}
+
+
+}
+
+kafka-console-consumer --topic emp-topic --bootstrap-server localhost:9092
+
+package name: com.boa.training.deserializer
+
+
+package com.boa.training.deserializer;
+
+import java.io.IOException;
+
+import org.apache.kafka.common.serialization.Deserializer;
+
+import com.boa.training.domain.Employee;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class EmployeeDeserializer implements Deserializer<Employee> {
+
+    private ObjectMapper mapper=new ObjectMapper();
+    @Override
+    public Employee deserialize(String topic, byte[] array) {
+        // TODO Auto-generated method stub
+        Employee e=null;
+        try {
+            e=mapper.readValue(array, Employee.class);
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        return e;
+    }
+
+}
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import com.boa.training.deserializer.EmployeeDeserializer;
+import com.boa.training.domain.Employee;
+
+public class EmployeeReceiver {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                EmployeeDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "group-1");
+        
+        KafkaConsumer<String,Employee> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("emp-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String,Employee> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->{
+                System.out.println("key:"+record.key());
+                Employee emp=record.value();
+                System.out.println("value: "+emp.getId()+"\t"+emp.getName()+"\t"+emp.getDesignation());
+            });
+            }
+            }
+
+    
+
+}
+
+
+
+
+
+
+
+package com.boa.training.domain;
+
+public class Employee {
+    private int id;
+    private String name;
+    private String designation;
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getDesignation() {
+        return designation;
+    }
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+    public Employee(int id, String name, String designation) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.designation = designation;
+    }
+    public Employee() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+    @Override
+    public String toString() {
+        return "Employee [id=" + id + ", name=" + name + ", designation=" + designation + "]";
+    }
+    
+    
+
+}
+
+
+
+jar tvf c:\jarfiles\emplibrary.jar
+
+
+
+kafka-console-consumer --topic emp-topic --value-deserializer com.boa.training.deserializer.EmployeeDeserializer --bootstrap-server localhost:9092 --from-beginning
+
+
+designation.properties
+
+Developer=0
+Accountant=1
+Architect=2
+IT-Admin=3
+
+
+
+package com.boa.training.partitioner;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Map;
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.Partitioner;
+import org.apache.kafka.common.Cluster;
+
+import com.boa.training.domain.Employee;
+
+public class EmployeePartitioner implements Partitioner {
+    private Properties props=new Properties();
+    @Override
+    public void configure(Map<String, ?> env) {
+        // TODO Auto-generated method stub
+        try {
+            FileInputStream fin=new FileInputStream("designation.properties");
+            props.load(fin);
+            fin.close();
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        
+    }
+
+    @Override
+    public void close() {
+        // TODO Auto-generated method stub
+        props=null;
+    }
+
+    @Override
+    public int partition(String topic, Object key, byte[] keyBytes,
+            Object value, byte[] valueBytes, Cluster cluster) {
+        // TODO Auto-generated method stub
+        int partition=4;
+        Employee employee=(Employee)value;
+        String designation=employee.getDesignation();
+        String partitionNo=props.getProperty(designation);
+        if(partitionNo!=null) {
+            partition=Integer.parseInt(partitionNo);
+        }
+        return partition;
+    }
+
+}
+
+
+package com.boa.training.sender;
+
+import java.util.Properties;
+
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+
+import org.apache.kafka.common.serialization.StringSerializer;
+
+import com.boa.training.domain.Employee;
+import com.boa.training.partitioner.EmployeePartitioner;
+import com.boa.training.serialzer.EmployeeSerializer;
+
+public class EmployeeSenderWithCustomPartitioner {
+public static void main(String[] args) {
+    Properties props=new Properties();
+    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, EmployeeSerializer.class.getName());
+    props.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, EmployeePartitioner.class.getName());
+    KafkaProducer<String, Employee> producer=new KafkaProducer<>(props);
+    String topic="emp-topic";
+    for(int i=1001;i<=1010;i++) {
+    ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+            new Employee(i, "Name "+i, "Developer"));
+    producer.send(record);
+    }
+    for(int i=2001;i<=2010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "Accountant"));
+        producer.send(record);
+        }
+    for(int i=3001;i<=3010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "Architect"));
+        producer.send(record);
+        }
+    for(int i=4001;i<=4010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "IT-Admin"));
+        producer.send(record);
+        }
+    for(int i=5001;i<=5010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "Project Manager"));
+        producer.send(record);
+        }
+    for(int i=6001;i<=6010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "HR Executive"));
+        producer.send(record);
+        }
+    
+    
+    System.out.println("messages sent");
+    producer.close();
+}
+}
+
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import com.boa.training.deserializer.EmployeeDeserializer;
+import com.boa.training.domain.Employee;
+
+public class EmployeeReceiver {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                EmployeeDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "group-1");
+        
+        KafkaConsumer<String,Employee> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("emp-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String,Employee> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println("key: "+record.key()+
+                    "\tvalue:"+record.value()+"\tpartition:"+record.partition()));
+                    
+                    
+            }
+            }
+
+    
+
+}
+
+
+kafka-dump-log --print-data-log --files c:\tmp\kafka-logs\emp-topic-0\00000000000000000000.log
+Dumping c:\tmp\kafka-logs\emp-topic-0\00000000000000000000.log
+
+kafka-topics --alter --topic first-topic --partitions 5 --zookeeper localhost:2181
+kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import com.boa.training.deserializer.EmployeeDeserializer;
+import com.boa.training.domain.Employee;
+
+public class EmployeeReceiver {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                EmployeeDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "emp-group-3");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        
+        KafkaConsumer<String,Employee> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("emp-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String,Employee> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println("key: "+record.key()+
+                    "\tvalue:"+record.value()+"\tpartition:"+record.partition()));
+            }
+            }
+
+    
+
+}
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import com.boa.training.deserializer.EmployeeDeserializer;
+import com.boa.training.domain.Employee;
+
+public class EmployeeReceiverWithOffset {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                EmployeeDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "emp-group-1");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        
+        KafkaConsumer<String,Employee> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("emp-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String,Employee> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println("key: "+record.key()+
+                    "\tvalue:"+record.value()+"\tpartition:"+record.partition()+"\toffset:"+
+                    record.offset()));
+            }
+            }
+
+    
+
+}
+
+
+package com.boa.training.sender;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.Callback;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+import com.boa.training.domain.Employee;
+import com.boa.training.partitioner.EmployeePartitioner;
+import com.boa.training.serialzer.EmployeeSerializer;
+
+
+class EmpTopicCallback implements Callback{
+    
+    private int id;
+    
+
+    public EmpTopicCallback(int id) {
+        super();
+        this.id = id;
+    }
+
+
+    @Override
+    public void onCompletion(RecordMetadata rmd, Exception e) {
+        // TODO Auto-generated method stub
+        if(e==null) {
+            System.out.println("employee with id "+id+" is published to "+rmd.partition()
+            +" at offset: "+rmd.offset());
+        }
+    }
+    
+}
+public class EmployeeSenderWithCallback {
+public static void main(String[] args) {
+    Properties props=new Properties();
+    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, EmployeeSerializer.class.getName());
+    props.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, EmployeePartitioner.class.getName());
+    KafkaProducer<String, Employee> producer=new KafkaProducer<>(props);
+    String topic="emp-topic";
+    for(int i=1001;i<=1010;i++) {
+    ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+            new Employee(i, "Name "+i, "Developer"));
+    producer.send(record,new EmpTopicCallback(i));
+    }
+    for(int i=2001;i<=2010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "Accountant"));
+        producer.send(record,new EmpTopicCallback(i));
+        }
+    for(int i=3001;i<=3010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "Architect"));
+        producer.send(record,new EmpTopicCallback(i));
+        }
+    for(int i=4001;i<=4010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "IT-Admin"));
+        producer.send(record,new EmpTopicCallback(i));
+        }
+    for(int i=5001;i<=5010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "Project Manager"));
+        producer.send(record,new EmpTopicCallback(i));
+        }
+    for(int i=6001;i<=6010;i++) {
+        ProducerRecord<String, Employee> record=new ProducerRecord<>(topic,
+                new Employee(i, "Name "+i, "HR Executive"));
+        producer.send(record,new EmpTopicCallback(i));
+        }
+    
+    
+    System.out.println("messages sent");
+    producer.close();
+}
+}
+
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import com.boa.training.deserializer.EmployeeDeserializer;
+import com.boa.training.domain.Employee;
+
+public class EmployeeReceiverWithOffset {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                EmployeeDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "emp-group-1");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        
+        KafkaConsumer<String,Employee> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("emp-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String,Employee> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println("key: "+record.key()+
+                    "\tvalue:"+record.value()+"\tpartition:"+record.partition()+"\toffset:"+
+                    record.offset()));
+            }
+            }
+
+  
+}
+
+kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-1 --bootstrap-server localhost:9092 --execute
+
+kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --shift-by -20 --group emp-group-1 --bootstrap-server localhost:9092 --execute
+kafka-consumer-groups  --describe --group emp-group-1 --bootstrap-server localhost:9092
+
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import com.boa.training.deserializer.EmployeeDeserializer;
+import com.boa.training.domain.Employee;
+
+public class EmployeeReceiverWithManualCommit {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                EmployeeDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "emp-group-1");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
+        
+        KafkaConsumer<String,Employee> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("emp-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String,Employee> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println("key: "+record.key()+
+                    "\tvalue:"+record.value()+"\tpartition:"+record.partition()+"\toffset:"+
+                    record.offset()));
+            consumer.commitSync();        
+            
+            }
+
+    
+
+}
+
+
+
+

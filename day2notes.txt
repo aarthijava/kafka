@@ -1,0 +1,83 @@
+class Employee{
+	private int id;
+	private String name;
+	private String designation;
+	..............
+	..............
+}
+
+
+interface Serializer<T>{
+	byte[] serialize(String topic,T t)
+}
+
+The default deserializer used by kafka-console-consumer is StringDeserializer.
+
+To create a serializer , we need to implement Serializer interface
+To create a deserializer , we need to implement Deserializer interface
+
+interface DeSerializer<T>{
+	T deserialize(String topic,byte[] array)
+}
+
+
+Custom Partitioner:
+
+designation		partition
+
+Developer		 0
+Accountant		 1
+Architect		 2
+IT-Admin		 3
+Any other 		 4
+
+When altering a topic,
+the number of partitions can be increased but can't be decreased
+the replication factor can't be modified
+
+offset:
+
+Each message in a partition is assigned an unique sequential id called offset.
+The offset starts from 0.
+
+The offset if of type long.
+So the maximum value for an offset is 2^63-1.
+
+default retention time for  a message is 1 week.
+
+In kafka , each message is called a log.
+
+Kafka maintains till which offset of a partition it has delivered to consumer group.
+
+Current-Offset:
+
+The next offset which will be delivered to a consumer group.
+Current offset is maintained for each consumer group.
+
+
+
+Log-end-Offset:
+The next offset to which a message will be published in the partition.
+Log-end-offset is maintained at the partition level and for the consumer group level.
+
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            
+group-1         emp-topic       1          10              10              0 
+
+The messages are published to partition 1 of emp-topic till offset number 9.
+The next message will be published to offset 10. This is what is LOG-END-OFFSET.
+
+Among these messages, the consumer group group-1 has consumed till offset number 9 in partition 1.
+The next offset that should be consumed by group-1 from partition 1 is 10. This is what is CURRENT-OFFSET.
+
+When a consumer-group is newly registered, it assumes that its current-offset is same as log-end-offset.
+For an existing group, the current offset is only till how much it has consumed. The unconsumed messages
+are treated as lag.
+
+If the newly registered group should consume all the old messages, the following property should be set.
+
+ConsumerConfig.AUTO_OFFSET_RESET_CONFIG----------------earliest
+
+
+
+
