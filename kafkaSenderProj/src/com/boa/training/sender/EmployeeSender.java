@@ -1,4 +1,4 @@
-package kafkaSenderProj;
+package com.boa.training.sender;
 
 import java.util.Properties;
 
@@ -9,9 +9,8 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
 
+import com.boa.training.domain.Employee;
 import com.boa.training.serializer.EmployeeSerializer;
-
-import domain.Employee;
 
 public class EmployeeSender {
 	public static void main(String[] args) {

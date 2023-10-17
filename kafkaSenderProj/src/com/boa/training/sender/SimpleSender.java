@@ -1,4 +1,4 @@
-package kafkaSenderProj;
+package com.boa.training.sender;
 
 import java.util.Properties;
 

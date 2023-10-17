@@ -2,10 +2,9 @@ package com.boa.training.serializer;
 
 import org.apache.kafka.common.serialization.Serializer;
 
+import com.boa.training.domain.Employee;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import domain.Employee;
 
 public class EmployeeSerializer implements Serializer<Employee>{
 	private ObjectMapper mapper=new ObjectMapper();

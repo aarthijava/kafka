@@ -1,4 +1,4 @@
-package domain;
+package com.boa.training.domain;
 
 
 public class Employee {

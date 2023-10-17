@@ -17,3 +17,48 @@ Employee [id=1002, name=Yugan, designation=tester]
 Employee [id=1002, name=Yugan, designation=tester]
 Employee [id=1002, name=Yugan, designation=tester]
 Employee [id=1002, name=Yugan, designation=tester]
+
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                             HOST            CLIENT-ID
+group-1         emp-topic       3          48              48              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       0          73              73              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       1          48              48              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       2          46              46              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       4          90              90              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         first-topic     1          202             232             30              -                                                       -               -
+group-1         first-topic     0          215             245             30              -                                                       -               -
+group-1         first-topic     3          127             167             40              -                                                       -               -
+group-1         first-topic     2          116             136             20              -                                                       -               -
+
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              84              36              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              110             37              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              84              36              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              83              37              -               -               -
+group-1         emp-topic       4          90              126             36              -               -               -
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-1 --bootstrap-server localhost:9092
+
+Error: Consumer group 'emp-group-1' does not exist.
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          84              84              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          110             110             0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          84              84              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          83              83              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          126             126             0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1

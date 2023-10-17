@@ -1,4 +1,4 @@
-package com.boa.training.patitioner;
+package com.boa.training.partitioner;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,7 +9,7 @@ import java.util.Properties;
 import org.apache.kafka.clients.producer.Partitioner;
 import org.apache.kafka.common.Cluster;
 
-import domain.Employee;
+import com.boa.training.domain.Employee;
 
 public class EmployeePartitioner implements Partitioner {
 	private Properties design = new Properties();

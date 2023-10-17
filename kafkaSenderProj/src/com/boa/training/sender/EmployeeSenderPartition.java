@@ -1,4 +1,4 @@
-package kafkaSenderProj;
+package com.boa.training.sender;
 
 import java.util.Properties;
 
@@ -9,10 +9,9 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
 
-import com.boa.training.patitioner.EmployeePartitioner;
+import com.boa.training.domain.Employee;
+import com.boa.training.partitioner.EmployeePartitioner;
 import com.boa.training.serializer.EmployeeSerializer;
-
-import domain.Employee;
 
 public class EmployeeSenderPartition {
 	public static void main(String[] args) {
@@ -39,7 +38,7 @@ public class EmployeeSenderPartition {
 	    ProducerRecord<String, Employee> record1=new ProducerRecord<>(topic, emp1);
 	    ProducerRecord<String, Employee> record2=new ProducerRecord<>(topic, emp2);*/
 	    
-	    for(int i=1001; i<1010; i++) {
+	    for(int i=1001; i<=1010; i++) {
 	    	 ProducerRecord<String, Employee> record=new ProducerRecord<>(topic, new Employee(i,"Name"+i,"Developer"));
 	    	 producer.send(record,new Callback() {
 	 	        

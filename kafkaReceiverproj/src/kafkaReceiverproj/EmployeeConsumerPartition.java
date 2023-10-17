@@ -11,8 +11,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
 import com.boa.training.deserializer.EmployeeDeSerializer;
-
-import domain.Employee;
+import com.boa.training.domain.Employee;
 
 public class EmployeeConsumerPartition {
 
