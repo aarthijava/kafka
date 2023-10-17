@@ -1,0 +1,361 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Waiting for messages
+
+key:Developer
+partition:0
+Employee [id=1001, name=Name1001, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1002, name=Name1002, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1003, name=Name1003, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1004, name=Name1004, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1005, name=Name1005, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1006, name=Name1006, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1007, name=Name1007, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1008, name=Name1008, designation=Developer]
+
+key:Developer
+partition:0
+Employee [id=1009, name=Name1009, designation=Developer]
+
+key:Accountant
+partition:1
+Employee [id=1011, name=Name1011, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1012, name=Name1012, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1013, name=Name1013, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1014, name=Name1014, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1015, name=Name1015, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1016, name=Name1016, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1017, name=Name1017, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1018, name=Name1018, designation=Accountant]
+
+key:Accountant
+partition:1
+Employee [id=1019, name=Name1019, designation=Accountant]
+
+key:IT-Admin
+partition:3
+Employee [id=1031, name=Name1031, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1032, name=Name1032, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1033, name=Name1033, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1034, name=Name1034, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1035, name=Name1035, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1036, name=Name1036, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1037, name=Name1037, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1038, name=Name1038, designation=IT-Admin]
+
+key:IT-Admin
+partition:3
+Employee [id=1039, name=Name1039, designation=IT-Admin]
+
+key:Architect
+partition:2
+Employee [id=1021, name=Name1021, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1022, name=Name1022, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1023, name=Name1023, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1024, name=Name1024, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1025, name=Name1025, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1026, name=Name1026, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1027, name=Name1027, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1028, name=Name1028, designation=Architect]
+
+key:Architect
+partition:2
+Employee [id=1029, name=Name1029, designation=Architect]
+
+key:Manager
+partition:4
+Employee [id=1041, name=Name1041, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1042, name=Name1042, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1043, name=Name1043, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1044, name=Name1044, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1045, name=Name1045, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1046, name=Name1046, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1047, name=Name1047, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1048, name=Name1048, designation=Manager]
+
+key:Manager
+partition:4
+Employee [id=1049, name=Name1049, designation=Manager]
+=======================================================================
+
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+serialized to {"id":1001,"name":"Name1001","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1001
+Designation:DeveloperPartitionNo:0	employeeid1001
+serialized to {"id":1002,"name":"Name1002","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1002
+serialized to {"id":1003,"name":"Name1003","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1003
+serialized to {"id":1004,"name":"Name1004","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1004
+serialized to {"id":1005,"name":"Name1005","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1005
+serialized to {"id":1006,"name":"Name1006","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1006
+serialized to {"id":1007,"name":"Name1007","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1007
+serialized to {"id":1008,"name":"Name1008","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1008
+serialized to {"id":1009,"name":"Name1009","designation":"Developer"}
+Designation:DeveloperPartitionNo:0	employeeid1009
+serialized to {"id":1011,"name":"Name1011","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1011
+Designation:AccountantPartitionNo:1	employeeid1011
+serialized to {"id":1012,"name":"Name1012","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1012
+serialized to {"id":1013,"name":"Name1013","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1013
+serialized to {"id":1014,"name":"Name1014","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1014
+serialized to {"id":1015,"name":"Name1015","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1015
+serialized to {"id":1016,"name":"Name1016","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1016
+serialized to {"id":1017,"name":"Name1017","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1017
+Designation:AccountantPartitionNo:1	employeeid1017
+serialized to {"id":1018,"name":"Name1018","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1018
+serialized to {"id":1019,"name":"Name1019","designation":"Accountant"}
+Designation:AccountantPartitionNo:1	employeeid1019
+serialized to {"id":1021,"name":"Name1021","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1021
+Designation:ArchitectPartitionNo:2	employeeid1021
+serialized to {"id":1022,"name":"Name1022","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1022
+serialized to {"id":1023,"name":"Name1023","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1023
+serialized to {"id":1024,"name":"Name1024","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1024
+serialized to {"id":1025,"name":"Name1025","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1025
+serialized to {"id":1026,"name":"Name1026","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1026
+serialized to {"id":1027,"name":"Name1027","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1027
+serialized to {"id":1028,"name":"Name1028","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1028
+serialized to {"id":1029,"name":"Name1029","designation":"Architect"}
+Designation:ArchitectPartitionNo:2	employeeid1029
+serialized to {"id":1031,"name":"Name1031","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1031
+Designation:IT-AdminPartitionNo:3	employeeid1031
+serialized to {"id":1032,"name":"Name1032","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1032
+serialized to {"id":1033,"name":"Name1033","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1033
+serialized to {"id":1034,"name":"Name1034","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1034
+serialized to {"id":1035,"name":"Name1035","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1035
+serialized to {"id":1036,"name":"Name1036","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1036
+serialized to {"id":1037,"name":"Name1037","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1037
+serialized to {"id":1038,"name":"Name1038","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1038
+serialized to {"id":1039,"name":"Name1039","designation":"IT-Admin"}
+Designation:IT-AdminPartitionNo:3	employeeid1039
+serialized to {"id":1041,"name":"Name1041","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1041
+Designation:ManagerPartitionNo:null	employeeid1041
+serialized to {"id":1042,"name":"Name1042","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1042
+Designation:ManagerPartitionNo:null	employeeid1042
+serialized to {"id":1043,"name":"Name1043","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1043
+serialized to {"id":1044,"name":"Name1044","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1044
+serialized to {"id":1045,"name":"Name1045","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1045
+Designation:ManagerPartitionNo:null	employeeid1045
+serialized to {"id":1046,"name":"Name1046","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1046
+serialized to {"id":1047,"name":"Name1047","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1047
+serialized to {"id":1048,"name":"Name1048","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1048
+Designation:ManagerPartitionNo:null	employeeid1048
+serialized to {"id":1049,"name":"Name1049","designation":"Manager"}
+Designation:ManagerPartitionNo:null	employeeid1049
+messages sent
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 1
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 3
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 2
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
+message successfully published to partition 4
+emp-topic
