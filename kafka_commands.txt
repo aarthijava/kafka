@@ -66,3 +66,8 @@ emp-group-3     emp-topic       4          126             126             0    
 
 
 kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-1 --bootstrap-server localhost:9092 --execute
+
+kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+
+kafka-consumer-groups --bootstrap-server localhost:9092 --group test-group --reset-offsets --all-topics --to-datetime 2017-08-04T00:00:00.000
