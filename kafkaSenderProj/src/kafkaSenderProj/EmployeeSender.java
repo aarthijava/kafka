@@ -2,9 +2,11 @@ package kafkaSenderProj;
 
 import java.util.Properties;
 
+import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import com.boa.training.serializer.EmployeeSerializer;
@@ -30,7 +32,20 @@ public class EmployeeSender {
 	    ProducerRecord<String, Employee> record1=new ProducerRecord<>(topic, "key-1", emp1);
 	    ProducerRecord<String, Employee> record2=new ProducerRecord<>(topic, "key-2", emp2);
 	    
-	    producer.send(record1);
+	    producer.send(record1,new Callback() {
+	        
+	        @Override
+	        public void onCompletion(RecordMetadata rmd, Exception e) {
+	            // TODO Auto-generated method stub
+	            if(e==null) {
+	                System.out.println("message successfully published to partition "+rmd.partition());
+	            }
+	            else {
+	                System.out.println("error in publishing");
+	                e.printStackTrace();
+	            }
+	        }
+	    });
 	    producer.send(record2);
 	   
 	    System.out.println("messages sent");
