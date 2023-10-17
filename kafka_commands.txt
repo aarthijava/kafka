@@ -62,3 +62,7 @@ emp-group-3     emp-topic       0          110             110             0    
 emp-group-3     emp-topic       1          84              84              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
 emp-group-3     emp-topic       2          83              83              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
 emp-group-3     emp-topic       4          126             126             0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+
+
+
+kafka-dump-log --print-data-log --files c:\tmp\kafka-logs\emp-topic-0\00000000000000000000.log
