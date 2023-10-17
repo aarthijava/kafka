@@ -1,15 +1,16 @@
 package com.boa.training.deserializer;
 
-import org.apache.kafka.common.serialization.Serializer;
+import org.apache.kafka.common.serialization.Deserializer;
+
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import domain.Employee;
 
-public class EmployeeDeSerializer implements Serializer<Employee>{
+public class EmployeeDeSerializer implements Deserializer<Employee>{
 	private ObjectMapper mapper=new ObjectMapper();
-	@Override
+/*	@Override
 	public byte[] serialize(String topic, Employee e) {
 		
         byte[] array=null;
@@ -21,6 +22,14 @@ public class EmployeeDeSerializer implements Serializer<Employee>{
             e1.printStackTrace();
         }
         return array;
+	}*/
+	@Override
+	public Employee deserialize(String topic, byte[] arg1) {
+		// TODO Auto-generated method stub
+		Employee e = new Employee();
+		//e.setId(id);
+		
+		return e;
 	}
 
 }
