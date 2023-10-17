@@ -27,6 +27,7 @@ public class SimpleConsumer {
 	        
 	        List<String> topics=Collections.singletonList("first-topic");
 	        consumer.subscribe(topics);
+	        System.out.println("Waiting for messages");
 	        
 	        while(true) {
 	            ConsumerRecords<String, String> records=consumer.poll(Duration.ofSeconds(20));
