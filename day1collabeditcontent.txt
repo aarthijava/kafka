@@ -1,0 +1,363 @@
+https://app.mymapit.in/code4/tiny/GIczb4
+
+Anil------------9703388097
+
+
+C:\Program Files\Java\jdk1.8.0_202 ----------- JAVA_HOME
+
+Kafka setup & verification:
+
+Kafka setup & verification:
+
+1. Download java 8 from https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html#license-lightbox and install it.
+2. Set the JAVA_HOME environment variable.(C:\Program Files\Java\jdk1.8.0_202)
+
+3. Download kafka from https://archive.apache.org/dist/kafka/2.5.0/kafka_2.12-2.5.0.tgz  and 
+extract it to c:\.
+
+4. set the KAFKA_HOME environment variable.(c:\kafka_2.12-2.5.0)
+
+2.12----------scala version used for development of kafka
+2.5.0---------kafka version
+
+KAFKA_HOME contains 4 subdirectories.
+
+config--------------contains the configuration files like server.properties,zookeeper.properties and etc.
+bin-----------------contains the binary scripts for unix platform
+    ----------------contains a subdirectory called windows which contains the scripts for windows os
+libs----------------contains the kafka libraries in the format of jar files.
+site-docs-----------contains the kafka documentation
+
+5. Add %JAVA_HOME%\bin and %KAFKA_HOME%\bin\windows to the path.
+
+6. Start the zookeeper.
+
+Zookeeper is a service which maintains the meta data of kafka.
+Meta data includes the number of partitions, current offset,log end offset and etc.
+
+Open a new command window and run the following command.
+
+zookeeper-server-start c:\kafka_2.12-2.5.0\config\zookeeper.properties
+
+zookeeper by default runs at port 2181
+7. Start the kafka server
+
+ Open a new command window and run the following command.
+
+kafka-server-start c:\kafka_2.12-2.5.0\config\server.properties
+
+kafka server by default runs at port 9092.
+8. create a kafka topic
+
+open a new command window and run the following command
+
+kafka-topics --create --topic first-topic --partitions 4 --replication-factor 1 --zookeeper localhost:2181
+
+
+9. start a kafka console producer to send messages to the topic.
+
+kafka-console-producer --topic first-topic --bootstrap-server localhost:9092
+
+
+10. start a kafka console consumer to consume messages from the topic.
+
+open a new command window and run the following command
+
+kafka-console-consumer --topic first-topic --bootstrap-server localhost:9092
+
+kafka-console-consumer --topic first-topic --bootstrap-server localhost:9092 --from-beginning
+
+kafka-console-consumer --group group-1 --bootstrap-server localhost:9092 --topic first-topic
+
+kafka-console-consumer --topic first-topic --bootstrap-server localhost:9092 --property print.key=true --group group-1
+
+kafka-console-producer --topic first-topic --bootstrap-server localhost:9092 --property parse.key=true --property key.separator=:
+
+
+first:this is a test message
+first:next message
+first:third message
+second:fourth message
+second:fifth message
+third:sixth message
+third:seventh message
+fourth:eighth message
+fourth:ninth message
+fifth:tenth message
+fifth:eleventh message
+sixth:twelth message
+sixth:thirteenth message
+seventh:fourteenth message
+seventh:fifteenth message
+eighth:sixteenth message
+eighth:seventeenth message
+eighth:eighteenth message
+ninth:ninteenth message
+ninth:twentieth message
+ninth:twenty first message
+tenth:twenty second message
+tenth:twenty third message
+
+
+<dependencies>
+  <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-clients</artifactId>
+    <version>2.5.0</version>
+</dependency>
+  
+  </dependencies>
+  
+  https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar
+  
+  
+  
+  package name:  com.boa.training.sender
+  
+  
+  
+  package com.boa.training.sender;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+public class SimpleSender {
+public static void main(String[] args) {
+    Properties props=new Properties();
+    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    
+    KafkaProducer<String, String> producer=new KafkaProducer<>(props);
+    String topic="first-topic";
+    for(int i=1;i<=10;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "first-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=11;i<=20;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "second-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=21;i<=30;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "third-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=31;i<=40;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "fourth-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=41;i<=50;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "fifth-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=51;i<=60;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "sixth-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    System.out.println("messages sent");
+    producer.close();
+}
+}
+
+
+
+
+
+kafka-console-consumer --topic first-topic --bootstrap-server localhost:9092
+
+
+>kafka-console-consumer --topic first-topic --bootstrap-server localhost:9092 --property print.key=true
+
+package name: com.boa.training.receiver
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+public class SimpleReceiver {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, 
+                "group-1");
+        
+        KafkaConsumer<String, String> consumer=new KafkaConsumer<>(props);
+        
+        List<String> topics=Collections.singletonList("first-topic");
+        consumer.subscribe(topics);
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String, String> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println(
+                    "key:"+record.key()+"\tvalue:"+record.value()+"\tpartition:"+record.partition()));
+        }
+
+    }
+
+}
+
+package com.boa.training.receiver;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.TopicPartition;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+public class ReceiverFromSpecificPartition {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Properties props=new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
+                StringDeserializer.class.getName());
+        
+        
+        KafkaConsumer<String, String> consumer=new KafkaConsumer<>(props);
+        
+        int partitionNo=Integer.parseInt(args[0]);
+        TopicPartition partition=new TopicPartition("first-topic", partitionNo);
+        
+        consumer.assign(Collections.singletonList(partition));
+        System.out.println("waiting for messages");
+        while(true) {
+            ConsumerRecords<String, String> records=consumer.poll(Duration.ofSeconds(20));
+            records.forEach(record->System.out.println(
+                    "key:"+record.key()+"\tvalue:"+record.value()+"\tpartition:"+record.partition()));
+        }
+
+    }
+
+}
+
+
+package name: com.boa.training.partitioner
+
+package com.boa.training.partitioner;
+
+import java.util.Map;
+
+import org.apache.kafka.clients.producer.Partitioner;
+import org.apache.kafka.common.Cluster;
+
+public class MessagePartitioner implements Partitioner{
+
+    @Override
+    public void configure(Map<String, ?> producerConfig) {
+        // TODO Auto-generated method stub
+        System.out.println("******configuring********");
+    }
+
+    @Override
+    public void close() {
+        // TODO Auto-generated method stub
+        System.out.println("******closing********");
+    }
+
+    @Override
+    public int partition(String topic, Object key, byte[] keyBytes, 
+            Object value, byte[] valueBytes, Cluster cluster) {
+        // TODO Auto-generated method stub
+        System.out.println("partitioning for message with key: "+key);
+        int partition=3;
+        if(key.equals("first-key")) {
+            partition=0;
+        }
+        else if(key.equals("second-key")) {
+            partition=1;
+        }
+        else if(key.equals("third-key")) {
+            partition=2;
+        }
+        return partition;
+    }
+
+}
+
+
+package com.boa.training.sender;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+import com.boa.training.partitioner.MessagePartitioner;
+
+public class SenderWithCustomPartitioner {
+public static void main(String[] args) {
+    Properties props=new Properties();
+    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    props.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, 
+            MessagePartitioner.class.getName());
+    
+    KafkaProducer<String, String> producer=new KafkaProducer<>(props);
+    String topic="first-topic";
+    for(int i=1;i<=10;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "first-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=11;i<=20;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "second-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=21;i<=30;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "third-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=31;i<=40;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "fourth-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    for(int i=41;i<=50;i++) {
+        ProducerRecord<String, String> record=new ProducerRecord<>(topic, "fifth-key", 
+                "This is test message "+i);
+        producer.send(record);
+    }
+    
+    System.out.println("messages sent");
+    producer.close();
+}
+}
+
+
