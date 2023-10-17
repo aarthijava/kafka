@@ -33,6 +33,12 @@ public class Employee {
         super();
         // TODO Auto-generated constructor stub
     }
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", designation=" + designation + "]";
+	}
+    
+    
     
 
 }

@@ -1,9 +1,12 @@
 package com.boa.training.deserializer;
 
+import java.io.IOException;
+
 import org.apache.kafka.common.serialization.Deserializer;
 
-
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import domain.Employee;
@@ -24,11 +27,22 @@ public class EmployeeDeSerializer implements Deserializer<Employee>{
         return array;
 	}*/
 	@Override
-	public Employee deserialize(String topic, byte[] arg1) {
+	public Employee deserialize(String topic, byte[] array) {
 		// TODO Auto-generated method stub
 		Employee e = new Employee();
 		//e.setId(id);
-		
+		try {
+			e=mapper.readValue(array, Employee.class);
+		} catch (JsonParseException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (JsonMappingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		return e;
 	}
 
