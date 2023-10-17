@@ -1,0 +1,235 @@
+Messaging---------------Meant for asynchronous communication
+
+Sender--------------->MOM-------------->Receiver
+
+MOM-------------Message Oriented Middleware
+
+
+Two types of messaging:
+
+1. point to point (1 to 1)
+2. publish & subscribe (1 to many)
+
+point to point
+
+Sender--------------->Queue------------->Receiver
+
+publish & subscribe
+
+		   	  |---------->receiver 1	
+sender------->Topic-------|---------->receiver 2
+		     	  |---------->receiver 3  	|
+
+Queue and Topic are called Messaging Destinations.
+
+
+Examples of MOM:
+
+IBM MQ
+Apache Active MQ
+Rabbit MQ
+Tibco Rendezvous
+
+
+Kafka is a message oriented middleware which supports only publish & subscribe messaging.
+
+Kafka supports distributed messaging.
+Pulsar is another MOM which supports distributed messaging.
+
+
+Distributed Messaging:
+
+In kafka, a topic is divided into multiple partitions.
+These partitions spread across multiple nodes in the cluster.
+
+A kafka cluster may contain hundreds of nodes in the cluster.
+Each kafka node is called a broker.
+Technically, each kafka broker is a jvm(kafka server instance).
+
+Each partition can be replicated in multiple brokers to support fault tolerance.
+The number of copies of the partition is decided based on the replication factor of the topic.
+
+Example:
+Assume that there are 5 brokers in the cluster and a topic is created in the cluster with 4 partitions.
+Paritions are numbered from 0.
+If there are 4 partitions, the available partitions will be  0,1,2 and 3.
+Assume that the replication factor of the topic is 3.
+A sample distribution of the partitions in the cluster can be as shown below.
+
+
+broker-1--------0,1,2
+
+broker-2--------3,0	
+
+broker-3--------1,2
+
+broker-4--------3,0
+
+broker-5--------1,2,3
+
+kafka guarantees that the a partion is not replicated in the same node more than once.
+
+
+Each partition contains a set of related messages.
+
+Each message has 2 parts.
+
+1. key------------all the messages with the same key go to the same partition
+2. value----------payload
+
+In a message, key is optional.
+If a message does not contain a key, kafka randomly distributes the message across partitions.
+
+The partition to which a message goes = hashcode_of_the_key % no_of_partitions
+
+Kafka code is written in Java(80%) and Scala(20%)
+
+Scala is a functional programming language which runs on top of the JVM.
+
+
+
+Kafka setup & verification:
+
+1. Download java 8 from https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html#license-lightbox and install it.
+2. Set the JAVA_HOME environment variable.(C:\Program Files\Java\jdk1.8.0_202)
+
+3. Download kafka from https://archive.apache.org/dist/kafka/2.5.0/kafka_2.12-2.5.0.tgz  and 
+extract it to c:\.
+
+4. set the KAFKA_HOME environment variable.(c:\kafka_2.12-2.5.0)
+
+2.12----------scala version used for development of kafka
+2.5.0---------kafka version
+
+KAFKA_HOME contains 4 subdirectories.
+
+config--------------contains the configuration files like server.properties,zookeeper.properties and etc.
+bin-----------------contains the binary scripts for unix platform
+    ----------------contains a subdirectory called windows which contains the scripts for windows os
+libs----------------contains the kafka libraries in the format of jar files.
+site-docs-----------contains the kafka documentation
+
+5. Add %JAVA_HOME%\bin and %KAFKA_HOME%\bin\windows to the path.
+
+6. Start the zookeeper.
+
+Zookeeper is a service which maintains the meta data of kafka.
+Meta data includes the number of partitions, current offset,log end offset and etc.
+
+Open a new command window and run the following command.
+
+zookeeper-server-start c:\kafka_2.12-2.5.0\config\zookeeper.properties
+
+zookeeper by default runs at port 2181
+7. Start the kafka server
+
+ Open a new command window and run the following command.
+
+kafka-server-start c:\kafka_2.12-2.5.0\config\server.properties
+
+kafka server by default runs at port 9092.
+8. create a kafka topic
+
+open a new command window and run the following command
+
+kafka-topics --create --topic first-topic --partitions 4 --replication-factor 1 --zookeeper localhost:2181
+
+
+9. start a kafka console producer to send messages to the topic.
+
+kafka-console-producer --topic first-topic --bootstrap-server localhost:9092
+
+
+10. start a kafka console consumer to consume messages from the topic.
+
+open a new command window and run the following command
+
+kafka-console-consumer --topic first-topic --bootstrap-server localhost:9092 
+
+Consumer group:
+
+A consumer group guarantees that a message is received by only one member of the group.
+When multiple consumers of the same group are running , a message received by one consumer of the 
+group will not be consumed by another consumer of the same group.
+
+If there are 4 partitions and 4 consumers of the same group are consuming from the topic,
+each consumer will be allocated 1 partition.
+If there are 4 partitions and 3 consumers of the same group are consuming from the topic,
+two consumers will be allocated 1 partition each and third consumer will be allocated 2 partitions.
+If there are 4 partitions and 2 consumers of the same group are consuming from the topic,
+each consumer will be allocated 2 partitions.
+If there are 4 partitions and 1 consumer of the same group is consuming from the topic,
+that consumer will be allocated all 4 partitions.
+If there are 4 partitions and 5 consumers of the same group are consuming from the topic, four consumers will be allocated 1 partition each and the fifth consumer will be idle.
+
+
+
+
+A consumer of a group can listen to multiple partitions of the same topic.
+
+A partition of a topic can't be shared by multiple consumers of the same group.
+
+	serializer    	      byte[]    deserializer
+sender----------------------->Topic--------------------->receiver
+	object--->byte[]		byte[]---->object
+
+Kafka api provides inbuilt serializers and deserializers for basic java classes like
+Integer,String and etc.
+
+kafka is not suitable for few messages of larger size.
+kafka is more suitable for large volumes of messages(millions) of smaller size.
+
+message is the fundamental unit of data in kafka.
+It can't be divided into smaller portions.
+
+Both kafka producer and consumer are kafka clients.
+So we need to add the kafka-clients maven dependency to both sender and receiver projects.
+
+maven tool:
+
+maven tool is used to automate building of java applications.
+One of the common uses of maven tool is add external libraries.
+In java community forum, there is a common agreement that all open source libraries are hosted at 
+mvnrepository.com(Global maven repository).
+
+Each library is identified by a <dependency> tag in pom.xml
+
+pom.xml is the maven project's config file.
+
+Each <dependency> has 3 attributes.
+
+group-id--------------company or project's name
+articat-id------------library name
+version---------------version
+
+Maven downloads the external libraries from the global repository to the local maven repository.
+Local maven repository is ~/.m2/repository
+
+~----user's home directory
+
+The jar file name is artifact-id-version.jar
+
+
+User Defined Partitioner:
+
+This is defined by implementing an interface called Partitioner.
+
+The partitioner should be configured in the sender code through the property ProducerConfig.PARTITIONER_CLASS_CONFIG.
+
+
+
+methods of Partitioner interface:
+
+config()------------contains initalization logic like opening a db connection/file--invoked only once
+partition()---------contains partitioning logic---------------invoked for each message
+close()-------------contains clean up logic like closing db connection/file
+
+key---------------------partition
+first-key		 0
+second-key		 1
+third-key		 2
+any other key		 3
+
+
+
+
