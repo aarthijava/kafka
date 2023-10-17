@@ -1,4 +1,4 @@
-package kafkaReceiverproj;
+package com.boa.training.receiver;
 
 import java.time.Duration;
 import java.util.Collections;
@@ -10,7 +10,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
-import com.boa.training.deserializer.EmployeeDeSerializer;
+import com.boa.training.deserializer.EmployeeDeserializer;
 import com.boa.training.domain.Employee;
 
 public class EmployeeReceiver {
@@ -22,7 +22,7 @@ public class EmployeeReceiver {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, 
                 StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
-                EmployeeDeSerializer.class.getName());
+                EmployeeDeserializer.class.getName());
         props.put(ConsumerConfig.GROUP_ID_CONFIG, 
                 "emp-group-3");
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");

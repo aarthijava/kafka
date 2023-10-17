@@ -10,7 +10,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class EmployeeDeSerializer implements Deserializer<Employee>{
+public class EmployeeDeserializer implements Deserializer<Employee>{
 	private ObjectMapper mapper=new ObjectMapper();
 /*	@Override
 	public byte[] serialize(String topic, Employee e) {

@@ -1,0 +1,1247 @@
+Microsoft Windows [Version 10.0.19042.789]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                             HOST            CLIENT-ID
+group-1         emp-topic       3          48              48              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       0          73              73              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       1          48              48              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       2          46              46              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         emp-topic       4          90              90              0               consumer-group-1-1-8126bcb7-6be2-41d3-9c11-a4f8b6db1067 /172.20.0.48    consumer-group-1-1
+group-1         first-topic     1          202             232             30              -                                                       -               -
+group-1         first-topic     0          215             245             30              -                                                       -               -
+group-1         first-topic     3          127             167             40              -                                                       -               -
+group-1         first-topic     2          116             136             20              -                                                       -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              57              9               -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              82              9               -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              57              9               -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              55              9               -               -               -
+group-1         emp-topic       4          90              99              9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              57              9               -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              82              9               -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              57              9               -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              55              9               -               -               -
+group-1         emp-topic       4          90              99              9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              57              9               -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              82              9               -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              57              9               -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              55              9               -               -               -
+group-1         emp-topic       4          90              99              9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              66              18              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              91              18              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              66              18              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              64              18              -               -               -
+group-1         emp-topic       4          90              108             18              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              66              18              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              91              18              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              66              18              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              64              18              -               -               -
+group-1         emp-topic       4          90              108             18              -               -               -
+
+C:\Users\Administrator>kafka-console-consumer --topic emp-topic --bootstrap-server localhost:9092
+Processed a total of 0 messages
+Terminate batch job (Y/N)? Y
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              75              27              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              100             27              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              75              27              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              73              27              -               -               -
+group-1         emp-topic       4          90              117             27              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              75              27              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              101             28              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              75              27              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              74              28              -               -               -
+group-1         emp-topic       4          90              117             27              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              75              27              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              101             28              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              75              27              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              74              28              -               -               -
+group-1         emp-topic       4          90              117             27              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              84              36              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              110             37              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              84              36              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              83              37              -               -               -
+group-1         emp-topic       4          90              126             36              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group group-1 --bootstrap-server localhost:9092
+
+Consumer group 'group-1' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+group-1         first-topic     1          202             232             30              -               -               -
+group-1         emp-topic       1          48              84              36              -               -               -
+group-1         first-topic     0          215             245             30              -               -               -
+group-1         emp-topic       0          73              110             37              -               -               -
+group-1         first-topic     3          127             167             40              -               -               -
+group-1         emp-topic       3          48              84              36              -               -               -
+group-1         first-topic     2          116             136             20              -               -               -
+group-1         emp-topic       2          46              83              37              -               -               -
+group-1         emp-topic       4          90              126             36              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-1 --bootstrap-server localhost:9092
+
+Error: Consumer group 'emp-group-1' does not exist.
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          84              84              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          110             110             0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          84              84              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          83              83              0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          126             126             0               consumer-emp-group-3-1-d80b9340-1b1e-4e32-a9ed-83b60586acc8 /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-1 --bootstrap-server localhost:9092 --execute
+
+Error: Executing consumer group command failed due to Cannot shift offset for partition emp-topic-0 since there is no current committed offset
+java.lang.IllegalArgumentException: Cannot shift offset for partition emp-topic-0 since there is no current committed offset
+        at kafka.admin.ConsumerGroupCommand$ConsumerGroupService.$anonfun$prepareOffsetsToReset$6(ConsumerGroupCommand.scala:749)
+        at scala.collection.MapLike.getOrElse(MapLike.scala:131)
+        at scala.collection.MapLike.getOrElse$(MapLike.scala:129)
+        at scala.collection.AbstractMap.getOrElse(Map.scala:63)
+        at kafka.admin.ConsumerGroupCommand$ConsumerGroupService.$anonfun$prepareOffsetsToReset$5(ConsumerGroupCommand.scala:749)
+        at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+        at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+        at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+        at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+        at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+        at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+        at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+        at kafka.admin.ConsumerGroupCommand$ConsumerGroupService.prepareOffsetsToReset(ConsumerGroupCommand.scala:746)
+        at kafka.admin.ConsumerGroupCommand$ConsumerGroupService.$anonfun$resetOffsets$1(ConsumerGroupCommand.scala:385)
+        at scala.collection.TraversableOnce.$anonfun$foldLeft$1(TraversableOnce.scala:162)
+        at scala.collection.TraversableOnce.$anonfun$foldLeft$1$adapted(TraversableOnce.scala:162)
+        at scala.collection.Iterator.foreach(Iterator.scala:941)
+        at scala.collection.Iterator.foreach$(Iterator.scala:941)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+        at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+        at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+        at scala.collection.TraversableOnce.foldLeft(TraversableOnce.scala:162)
+        at scala.collection.TraversableOnce.foldLeft$(TraversableOnce.scala:160)
+        at scala.collection.AbstractTraversable.foldLeft(Traversable.scala:108)
+        at kafka.admin.ConsumerGroupCommand$ConsumerGroupService.resetOffsets(ConsumerGroupCommand.scala:380)
+        at kafka.admin.ConsumerGroupCommand$.main(ConsumerGroupCommand.scala:69)
+        at kafka.admin.ConsumerGroupCommand.main(ConsumerGroupCommand.scala)
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      3          74
+emp-group-3                    emp-topic                      0          100
+emp-group-3                    emp-topic                      1          74
+emp-group-3                    emp-topic                      2          73
+emp-group-3                    emp-topic                      4          126
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      3          54
+emp-group-3                    emp-topic                      0          80
+emp-group-3                    emp-topic                      1          54
+emp-group-3                    emp-topic                      2          53
+emp-group-3                    emp-topic                      4          106
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          54              94              40              -               -               -
+emp-group-3     emp-topic       0          80              120             40              -               -               -
+emp-group-3     emp-topic       3          54              94              40              -               -               -
+emp-group-3     emp-topic       2          53              93              40              -               -               -
+emp-group-3     emp-topic       4          106             146             40              -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          94              94              0               consumer-emp-group-3-1-b533756f-3138-46b8-b179-5a4542ce3de4 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          120             120             0               consumer-emp-group-3-1-b533756f-3138-46b8-b179-5a4542ce3de4 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          94              94              0               consumer-emp-group-3-1-b533756f-3138-46b8-b179-5a4542ce3de4 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          93              93              0               consumer-emp-group-3-1-b533756f-3138-46b8-b179-5a4542ce3de4 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          146             146             0               consumer-emp-group-3-1-b533756f-3138-46b8-b179-5a4542ce3de4 /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --shift-by -20 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      3          74
+emp-group-3                    emp-topic                      0          100
+emp-group-3                    emp-topic                      1          74
+emp-group-3                    emp-topic                      2          73
+emp-group-3                    emp-topic                      4          126
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          94              94              0               consumer-emp-group-3-1-b8a3a772-068a-4fc7-88c3-329d68a20e97 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          120             120             0               consumer-emp-group-3-1-b8a3a772-068a-4fc7-88c3-329d68a20e97 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          94              94              0               consumer-emp-group-3-1-b8a3a772-068a-4fc7-88c3-329d68a20e97 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          93              93              0               consumer-emp-group-3-1-b8a3a772-068a-4fc7-88c3-329d68a20e97 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          146             146             0               consumer-emp-group-3-1-b8a3a772-068a-4fc7-88c3-329d68a20e97 /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --shift-by -20 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          74
+emp-group-3                    emp-topic                      2          73
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          94              94              0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          120             120             0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          94              94              0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          93              93              0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          146             146             0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>kafka-consumer-groups --reset-offets
+Exception in thread "main" joptsimple.UnrecognizedOptionException: reset-offets is not a recognized option
+        at joptsimple.OptionException.unrecognizedOption(OptionException.java:108)
+        at joptsimple.OptionParser.handleLongOptionToken(OptionParser.java:510)
+        at joptsimple.OptionParserState$2.handleArgument(OptionParserState.java:56)
+        at joptsimple.OptionParser.parse(OptionParser.java:396)
+        at kafka.admin.ConsumerGroupCommand$ConsumerGroupCommandOptions.<init>(ConsumerGroupCommand.scala:1010)
+        at kafka.admin.ConsumerGroupCommand$.main(ConsumerGroupCommand.scala:48)
+        at kafka.admin.ConsumerGroupCommand.main(ConsumerGroupCommand.scala)
+
+C:\Users\Administrator>kafka-consumer-groups --reset-offsets
+Missing required argument "[bootstrap-server]"
+Option                                  Description
+------                                  -----------
+--all-groups                            Apply to all consumer groups.
+--all-topics                            Consider all topics assigned to a
+                                          group in the `reset-offsets` process.
+--bootstrap-server <String: server to   REQUIRED: The server(s) to connect to.
+  connect to>
+--by-duration <String: duration>        Reset offsets to offset by duration
+                                          from current timestamp. Format:
+                                          'PnDTnHnMnS'
+--command-config <String: command       Property file containing configs to be
+  config property file>                   passed to Admin Client and Consumer.
+--delete                                Pass in groups to delete topic
+                                          partition offsets and ownership
+                                          information over the entire consumer
+                                          group. For instance --group g1 --
+                                          group g2
+--delete-offsets                        Delete offsets of consumer group.
+                                          Supports one consumer group at the
+                                          time, and multiple topics.
+--describe                              Describe consumer group and list
+                                          offset lag (number of messages not
+                                          yet processed) related to given
+                                          group.
+--dry-run                               Only show results without executing
+                                          changes on Consumer Groups.
+                                          Supported operations: reset-offsets.
+--execute                               Execute operation. Supported
+                                          operations: reset-offsets.
+--export                                Export operation execution to a CSV
+                                          file. Supported operations: reset-
+                                          offsets.
+--from-file <String: path to CSV file>  Reset offsets to values defined in CSV
+                                          file.
+--group <String: consumer group>        The consumer group we wish to act on.
+--help                                  Print usage information.
+--list                                  List all consumer groups.
+--members                               Describe members of the group. This
+                                          option may be used with '--describe'
+                                          and '--bootstrap-server' options
+                                          only.
+                                        Example: --bootstrap-server localhost:
+                                          9092 --describe --group group1 --
+                                          members
+--offsets                               Describe the group and list all topic
+                                          partitions in the group along with
+                                          their offset lag. This is the
+                                          default sub-action of and may be
+                                          used with '--describe' and '--
+                                          bootstrap-server' options only.
+                                        Example: --bootstrap-server localhost:
+                                          9092 --describe --group group1 --
+                                          offsets
+--reset-offsets                         Reset offsets of consumer group.
+                                          Supports one consumer group at the
+                                          time, and instances should be
+                                          inactive
+                                        Has 2 execution options: --dry-run
+                                          (the default) to plan which offsets
+                                          to reset, and --execute to update
+                                          the offsets. Additionally, the --
+                                          export option is used to export the
+                                          results to a CSV format.
+                                        You must choose one of the following
+                                          reset specifications: --to-datetime,
+                                          --by-period, --to-earliest, --to-
+                                          latest, --shift-by, --from-file, --
+                                          to-current.
+                                        To define the scope use --all-topics
+                                          or --topic. One scope must be
+                                          specified unless you use '--from-
+                                          file'.
+--shift-by <Long: number-of-offsets>    Reset offsets shifting current offset
+                                          by 'n', where 'n' can be positive or
+                                          negative.
+--state                                 Describe the group state. This option
+                                          may be used with '--describe' and '--
+                                          bootstrap-server' options only.
+                                        Example: --bootstrap-server localhost:
+                                          9092 --describe --group group1 --
+                                          state
+--timeout <Long: timeout (ms)>          The timeout that can be set for some
+                                          use cases. For example, it can be
+                                          used when describing the group to
+                                          specify the maximum amount of time
+                                          in milliseconds to wait before the
+                                          group stabilizes (when the group is
+                                          just created, or is going through
+                                          some changes). (default: 5000)
+--to-current                            Reset offsets to current offset.
+--to-datetime <String: datetime>        Reset offsets to offset from datetime.
+                                          Format: 'YYYY-MM-DDTHH:mm:SS.sss'
+--to-earliest                           Reset offsets to earliest offset.
+--to-latest                             Reset offsets to latest offset.
+--to-offset <Long: offset>              Reset offsets to a specific offset.
+--topic <String: topic>                 The topic whose consumer group
+                                          information should be deleted or
+                                          topic whose should be included in
+                                          the reset offset process. In `reset-
+                                          offsets` case, partitions can be
+                                          specified using this format: `topic1:
+                                          0,1,2`, where 0,1,2 are the
+                                          partition to be included in the
+                                          process. Reset-offsets also supports
+                                          multiple topic inputs.
+--verbose                               Provide additional information, if
+                                          any, when describing the group. This
+                                          option may be used with '--
+                                          offsets'/'--members'/'--state' and
+                                          '--bootstrap-server' options only.
+                                        Example: --bootstrap-server localhost:
+                                          9092 --describe --group group1 --
+                                          members --verbose
+--version                               Display Kafka version.
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          94              94              0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          120             120             0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          94              94              0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          93              93              0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          146             146             0               consumer-emp-group-3-1-f40586f8-7892-408d-96fa-302b4755983b /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092
+WARN: No action will be performed as the --execute option is missing.In a future major release, the default behavior of this command will be to prompt the user before executing the reset rather than doing a dry run. You should add the --dry-run option explicitly if you are scripting this command and want to keep the current default behavior without prompting.
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:14:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:10:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T07:10:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          0
+emp-group-3                    emp-topic                      2          4
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:00:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>datetime
+'datetime' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>time
+The current time is: 17:42:51.41
+Enter the new time:
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T16:00:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T05:00:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          0
+emp-group-3                    emp-topic                      2          0
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T07:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          0
+emp-group-3                    emp-topic                      2          4
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T07:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          30
+emp-group-3                    emp-topic                      2          28
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T08:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          48
+emp-group-3                    emp-topic                      2          46
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T09:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          57
+emp-group-3                    emp-topic                      2          55
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T10:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          84
+emp-group-3                    emp-topic                      2          83
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          94              103             9               -               -               -
+emp-group-3     emp-topic       0          120             130             10              -               -               -
+emp-group-3     emp-topic       3          94              103             9               -               -               -
+emp-group-3     emp-topic       2          93              102             9               -               -               -
+emp-group-3     emp-topic       4          146             155             9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092
+WARN: No action will be performed as the --execute option is missing.In a future major release, the default behavior of this command will be to prompt the user before executing the reset rather than doing a dry run. You should add the --dry-run option explicitly if you are scripting this command and want to keep the current default behavior without prompting.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          103
+emp-group-3                    emp-topic                      2          102
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          94              103             9               -               -               -
+emp-group-3     emp-topic       0          120             130             10              -               -               -
+emp-group-3     emp-topic       3          94              103             9               -               -               -
+emp-group-3     emp-topic       2          93              102             9               -               -               -
+emp-group-3     emp-topic       4          146             155             9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          94              103             9               -               -               -
+emp-group-3     emp-topic       0          120             130             10              -               -               -
+emp-group-3     emp-topic       3          94              103             9               -               -               -
+emp-group-3     emp-topic       2          93              102             9               -               -               -
+emp-group-3     emp-topic       4          146             155             9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          94              103             9               -               -               -
+emp-group-3     emp-topic       0          120             130             10              -               -               -
+emp-group-3     emp-topic       3          94              103             9               -               -               -
+emp-group-3     emp-topic       2          93              102             9               -               -               -
+emp-group-3     emp-topic       4          146             155             9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          94              103             9               -               -               -
+emp-group-3     emp-topic       0          120             130             10              -               -               -
+emp-group-3     emp-topic       3          94              103             9               -               -               -
+emp-group-3     emp-topic       2          93              102             9               -               -               -
+emp-group-3     emp-topic       4          146             155             9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+Consumer group 'emp-group-3' has no active members.
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+emp-group-3     emp-topic       1          94              103             9               -               -               -
+emp-group-3     emp-topic       0          120             130             10              -               -               -
+emp-group-3     emp-topic       3          94              103             9               -               -               -
+emp-group-3     emp-topic       2          93              102             9               -               -               -
+emp-group-3     emp-topic       4          146             155             9               -               -               -
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          94              103             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          120             130             10              consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          94              103             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          93              102             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          146             155             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+emp-group-3     emp-topic       3          103             103             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       0          130             130             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       1          103             103             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       2          102             102             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+emp-group-3     emp-topic       4          155             155             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+
+C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+emp-group-3                    emp-topic                      3          94
+emp-group-3                    emp-topic                      0          120
+emp-group-3                    emp-topic                      1          94
+emp-group-3                    emp-topic                      2          93
+emp-group-3                    emp-topic                      4          146
+
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T16:00:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T05:00:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          0
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          0
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T07:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          0
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          4
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T07:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          30
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          28
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T08:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          48
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          46
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T09:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          57
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          55
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T10:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          84
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          83
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Consumer group 'emp-group-3' has no active members.
+'Consumer' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T17:20:00.000 --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>WARN: No action will be performed as the --execute option is missing.In a future major release, the default behavior of this command will be to prompt the user before executing the reset rather than doing a dry run. You should add the --dry-run option explicitly if you are scripting this command and want to keep the current default behavior without prompting.
+'WARN:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          103
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          102
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Consumer group 'emp-group-3' has no active members.
+'Consumer' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Consumer group 'emp-group-3' has no active members.
+'Consumer' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Consumer group 'emp-group-3' has no active members.
+'Consumer' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Consumer group 'emp-group-3' has no active members.
+'Consumer' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Consumer group 'emp-group-3' has no active members.
+'Consumer' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               -               -               -
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          94              103             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          120             130             10              consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          94              103             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          93              102             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          146             155             9               consumer-emp-group-3-1-88b6556f-3091-4293-9e9c-0a44628c6509 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups --describe --group emp-group-3 --bootstrap-server localhost:9092
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                 HOST            CLIENT-ID
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       3          103             103             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       0          130             130             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       1          103             103             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       2          102             102             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3     emp-topic       4          155             155             0               consumer-emp-group-3-1-ab273897-a4d9-4759-bc94-64bb6cee3b32 /172.20.0.48    consumer-emp-group-3-1
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+'Error:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>Error: Assignments can only be reset if the group 'emp-group-3' is inactive, but the current state is Stable.
+'Error:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic:1,2 --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>kafka-consumer-groups  --reset-offsets --topic emp-topic --to-datetime 2023-10-17T11:50:00.000 --group emp-group-3 --bootstrap-server localhost:9092 --execute
+'C:\Users\Administrator' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>GROUP                          TOPIC                          PARTITION  NEW-OFFSET
+'GROUP' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      3          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      0          120
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      1          94
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      2          93
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>emp-group-3                    emp-topic                      4          146
+'emp-group-3' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Administrator>
+C:\Users\Administrator>C:\Users\Administrator>
+The syntax of the command is incorrect.
+C:\Users\Administrator>
