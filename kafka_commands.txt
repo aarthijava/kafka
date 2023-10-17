@@ -6,3 +6,14 @@ kafka-console-consumer --topic emp-topic --bootstrap-server localhost:9092
  following subscribed topics are not assigned to any members: [emp-topic]  (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator)
 {"id":1001,"name":"Tanvi","designation":"Dev"}
 {"id":1002,"name":"Yugan","designation":"tester"}
+
+
+C:\Users\Administrator>kafka-console-consumer --topic emp-topic --value-deserializer com.boa.training.deserializer.EmployeeDeSerializer --bootstrap-server localhost:9092 --from-beginning
+Employee [id=1001, name=Tanvi, designation=Dev]
+Employee [id=1001, name=Tanvi, designation=Dev]
+Employee [id=1001, name=Tanvi, designation=Dev]
+Employee [id=1001, name=Tanvi, designation=Dev]
+Employee [id=1002, name=Yugan, designation=tester]
+Employee [id=1002, name=Yugan, designation=tester]
+Employee [id=1002, name=Yugan, designation=tester]
+Employee [id=1002, name=Yugan, designation=tester]
