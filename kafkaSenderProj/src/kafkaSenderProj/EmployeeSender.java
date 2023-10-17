@@ -39,6 +39,7 @@ public class EmployeeSender {
 	            // TODO Auto-generated method stub
 	            if(e==null) {
 	                System.out.println("message successfully published to partition "+rmd.partition());
+	                System.out.println(rmd.topic());
 	            }
 	            else {
 	                System.out.println("error in publishing");
