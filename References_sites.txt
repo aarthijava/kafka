@@ -3,3 +3,5 @@ https://www.conduktor.io/kafka/what-is-apache-kafka/
 
 
 https://datacouch.medium.com/understanding-confluent-schema-registry-7f5670d0afae
+
+https://dzone.com/articles/kafka-avro-serialization-and-the-schema-registry
