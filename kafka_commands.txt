@@ -75,3 +75,5 @@ kafka-consumer-groups --bootstrap-server localhost:9092 --group test-group --res
 =======
 kafka-dump-log --print-data-log --files c:\tmp\kafka-logs\emp-topic-0\00000000000000000000.log
 
+
+aarthijava <99486227+aarthijava@users.noreply.github.com>
