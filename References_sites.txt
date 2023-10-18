@@ -12,3 +12,7 @@ https://dzone.com/articles/kafka-avro-serialization-and-the-schema-registry
 Connector JDBC:
 --------------
 https://www.confluent.io/hub/confluentinc/kafka-connect-jdbc
+
+
+https://downloads.mysql.com/archives/c-j/
+
