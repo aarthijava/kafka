@@ -75,3 +75,25 @@ kafka-consumer-groups --bootstrap-server localhost:9092 --group test-group --res
 =======
 kafka-dump-log --print-data-log --files c:\tmp\kafka-logs\emp-topic-0\00000000000000000000.log
 
+
+aarthijava <99486227+aarthijava@users.noreply.github.com>
+
+C:\Users\Administrator>kafka-console-consumer --topic test-connector-topic --bootstrap-server localhost:9092 --from-beginning
+{"schema":{"type":"string","optional":false},"payload":"advanced kafka training"}
+{"schema":{"type":"string","optional":false},"payload":"hello world"}
+{"schema":{"type":"string","optional":false},"payload":"new line"}
+{"schema":{"type":"string","optional":false},"payload":"test enter"}
+{"schema":{"type":"string","optional":false},"payload":"ne wline sink"}
+{"schema":{"type":"string","optional":false},"payload":"testing---8989"}
+"testing---83434" 
+
+connect-standalone.properties
+--with schema
+key.converter.schemas.enable=true
+value.converter.schemas.enable=true 
+--wihtout schema
+key.converter.schemas.enable=false
+value.converter.schemas.enable=false
+
+connect-standalone c:\kafka_2.12-2.5.0\config\connect-standalone.properties c:\kafka_2.12-2.5.0\config\my-connect-file-source.properties c:\kafka_2.12-2.5.0\config\my-connect-file-sink.properties
+

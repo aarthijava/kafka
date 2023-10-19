@@ -7,3 +7,12 @@ https://datacouch.medium.com/understanding-confluent-schema-registry-7f5670d0afa
 https://dzone.com/articles/kafka-avro-serialization-and-the-schema-registry
 
 https://dzone.com/articles/kafka-avro-serialization-and-the-schema-registry
+
+
+Connector JDBC:
+--------------
+https://www.confluent.io/hub/confluentinc/kafka-connect-jdbc
+
+
+https://downloads.mysql.com/archives/c-j/
+
