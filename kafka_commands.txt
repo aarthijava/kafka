@@ -95,5 +95,32 @@ value.converter.schemas.enable=true
 key.converter.schemas.enable=false
 value.converter.schemas.enable=false
 
+
+
+
+connect-standalone c:\kafka_2.12-2.5.0\config\connect-standalone.properties c:\kafka_2.12-2.5.0\config\my-connect-file-source.properties c:\kafka_2.12-2.5.0\config\my-connect-file-sink.properties
+
+
+
+
+connect-standalone c:\kafka_2.12-2.5.0\config\connect-standalone.properties c:\kafka_2.12-2.5.0\config\my-connect-file-source.properties c:\kafka_2.12-2.5.0\config\my-connect-file-sink.properties
+
+ c:\kafka_2.12-2.5.0\config\my-connect-file-sink.properties
+name=local-file-source
+connector.class=FileStreamSource
+tasks.max=1
+file=c:/input/test.txt
+topic=etl-src-topic
+
+
+my-connect-file-sink.properties
+name=local-file-sink1
+connector.class=FileStreamSink
+tasks.max=1
+file=c:/output/out.txt
+topics=etl-target-topic
+
+
+
 connect-standalone c:\kafka_2.12-2.5.0\config\connect-standalone.properties c:\kafka_2.12-2.5.0\config\my-connect-file-source.properties c:\kafka_2.12-2.5.0\config\my-connect-file-sink.properties
 
