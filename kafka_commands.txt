@@ -124,3 +124,7 @@ topics=etl-target-topic
 
 connect-standalone c:\kafka_2.12-2.5.0\config\connect-standalone.properties c:\kafka_2.12-2.5.0\config\my-connect-file-source.properties c:\kafka_2.12-2.5.0\config\my-connect-file-sink.properties
 
+
+connect-standalone c:\kafka_2.12-2.5.0\config\connect-standalone.properties c:\kafka_2.12-2.5.0\config\etl-connect-file-source.properties c:\kafka_2.12-2.5.0\config\etl-connect-file-sink.properties
+
+
