@@ -16,7 +16,21 @@ from installation etc/ hadoop
 hadoop env.cmd
 recognizing the java-home
 
-set JAVA_HOME: 
+set JAVA_HOME=C:\Program..\jdk1.8.0202
 replace the line in collabedit
+
+cmd window:
+start-dfs
+
+will start 2 node -> name node, data node
+
+click enter and minimise the 2 windows
+
+̣.l';/.
+
+
+
+
+
 
 
