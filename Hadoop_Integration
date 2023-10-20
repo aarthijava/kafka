@@ -1,0 +1,22 @@
+install hadoop 2-7.1
+
+winutils master bin folder -> required for running hadoop in windows
+
+replace the files to bin directory downloaded
+
+Copy to bin directory
+
+hdfs-site.xml -?> empty
+core-site.xml -> drive
+
+copy from collabedit-> file content
+open comamnd promt
+from installation etc/ hadoop
+
+hadoop env.cmd
+recognizing the java-home
+
+set JAVA_HOME: 
+replace the line in collabedit
+
+
